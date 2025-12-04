@@ -1,0 +1,65 @@
+CREATE TABLE [dbo].[fenix_fe_reproceso] (
+    [col01] VARCHAR (200) NULL,
+    [col02] VARCHAR (200) NULL,
+    [col03] VARCHAR (200) NULL,
+    [col04] VARCHAR (200) NULL,
+    [col05] VARCHAR (200) NULL,
+    [col06] VARCHAR (200) NULL,
+    [col07] VARCHAR (200) NULL,
+    [col08] VARCHAR (200) NULL,
+    [col09] VARCHAR (200) NULL,
+    [col10] VARCHAR (200) NULL,
+    [col11] VARCHAR (200) NULL,
+    [col12] VARCHAR (200) NULL,
+    [col13] VARCHAR (200) NULL,
+    [col14] VARCHAR (200) NULL,
+    [col15] VARCHAR (200) NULL,
+    [col16] VARCHAR (200) NULL,
+    [col17] VARCHAR (200) NULL,
+    [col18] VARCHAR (200) NULL,
+    [col19] VARCHAR (200) NULL,
+    [col20] VARCHAR (200) NULL,
+    [col21] VARCHAR (200) NULL,
+    [col22] VARCHAR (200) NULL,
+    [col23] VARCHAR (200) NULL,
+    [col24] VARCHAR (200) NULL,
+    [col25] VARCHAR (200) NULL,
+    [col26] VARCHAR (200) NULL,
+    [col27] VARCHAR (200) NULL,
+    [col28] VARCHAR (200) NULL,
+    [col29] VARCHAR (200) NULL,
+    [col30] VARCHAR (200) NULL,
+    [col31] VARCHAR (200) NULL,
+    [col32] VARCHAR (200) NULL,
+    [col33] VARCHAR (200) NULL,
+    [col34] VARCHAR (200) NULL,
+    [col35] VARCHAR (200) NULL,
+    [col36] VARCHAR (200) NULL,
+    [col37] VARCHAR (200) NULL,
+    [col38] VARCHAR (200) NULL,
+    [col39] VARCHAR (200) NULL,
+    [col40] VARCHAR (200) NULL,
+    [col41] VARCHAR (200) NULL,
+    [col42] VARCHAR (200) NULL,
+    [col43] VARCHAR (200) NULL,
+    [col44] VARCHAR (200) NULL,
+    [col45] VARCHAR (200) NULL,
+    [col46] VARCHAR (200) NULL,
+    [col47] VARCHAR (200) NULL,
+    [col48] VARCHAR (200) NULL,
+    [col49] VARCHAR (200) NULL,
+    [col50] VARCHAR (200) NULL,
+    [col51] VARCHAR (200) NULL,
+    [col52] VARCHAR (200) NULL,
+    [col53] VARCHAR (200) NULL
+);
+
+
+GO
+
+CREATE NONCLUSTERED INDEX [idx_fenix_fe_reproceso]
+    ON [dbo].[fenix_fe_reproceso]([col10] ASC) WITH (FILLFACTOR = 90);
+
+
+GO
+

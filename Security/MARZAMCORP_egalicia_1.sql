@@ -1,0 +1,5 @@
+CREATE USER [MARZAMCORP\egalicia] FOR LOGIN [MARZAMCORP\egalicia];
+
+
+GO
+

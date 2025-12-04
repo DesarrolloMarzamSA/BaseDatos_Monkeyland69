@@ -1,0 +1,40 @@
+CREATE TABLE [dbo].[pedidos_lab_sanofi_header_historia] (
+    [arch_cliente]                   VARCHAR (100) NOT NULL,
+    [sucursal]                       INT           NULL,
+    [letra]                          CHAR (1)      NULL,
+    [cliente]                        VARCHAR (6)   NULL,
+    [factura]                        VARCHAR (90)  NULL,
+    [b2b_order_number]               VARCHAR (60)  NOT NULL,
+    [tax]                            MONEY         NULL,
+    [shipping_charges]               MONEY         NULL,
+    [pedido]                         VARCHAR (50)  NULL,
+    [sa_order_total_discount]        MONEY         NULL,
+    [ws_order_total_discount]        MONEY         NULL,
+    [total_amount]                   MONEY         NULL,
+    [order_status]                   VARCHAR (90)  NULL,
+    [payment_type]                   VARCHAR (90)  NULL,
+    [rejection_reason]               VARCHAR (50)  NULL,
+    [delivery_date]                  DATE          NULL,
+    [user_name]                      VARCHAR (90)  NULL,
+    [first_name]                     VARCHAR (90)  NULL,
+    [last_name]                      VARCHAR (90)  NULL,
+    [order_date]                     DATE          NULL,
+    [ws_code]                        VARCHAR (90)  NULL,
+    [ws_customer_code]               VARCHAR (90)  NULL,
+    [memo]                           VARCHAR (240) NULL,
+    [shipping_method]                VARCHAR (90)  NULL,
+    [recepcion]                      DATETIME      NULL,
+    [procesado]                      BIT           DEFAULT ((0)) NULL,
+    [country]                        CHAR (2)      NULL,
+    [wholesaler]                     VARCHAR (10)  NULL,
+    [order_confirmation_filename]    VARCHAR (100) NULL,
+    [invoice_creation_filename]      VARCHAR (100) NULL,
+    [shipment_notification_filename] VARCHAR (100) NULL,
+    [serie_cfd]                      VARCHAR (2)   NULL,
+    [folio_fiscal]                   VARCHAR (10)  NULL,
+    PRIMARY KEY CLUSTERED ([arch_cliente] ASC, [b2b_order_number] ASC) WITH (FILLFACTOR = 90)
+);
+
+
+GO
+

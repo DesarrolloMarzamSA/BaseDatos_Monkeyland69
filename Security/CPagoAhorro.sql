@@ -1,0 +1,6 @@
+CREATE SCHEMA [CPagoAhorro]
+    AUTHORIZATION [dbo];
+
+
+GO
+

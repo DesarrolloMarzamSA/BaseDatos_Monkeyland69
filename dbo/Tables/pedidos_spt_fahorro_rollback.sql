@@ -1,0 +1,37 @@
+CREATE TABLE [dbo].[pedidos_spt_fahorro_rollback] (
+    [cuenta_estilo_ahorro] VARCHAR (9)  NOT NULL,
+    [hash_md5]             VARCHAR (50) NOT NULL,
+    [orden]                VARCHAR (50) NOT NULL,
+    [cod_barras]           VARCHAR (50) NOT NULL,
+    [sucursal]             INT          NULL,
+    [cuenta]               VARCHAR (50) NULL,
+    [tipo_pedido]          VARCHAR (50) NULL,
+    [codigo]               VARCHAR (50) NULL,
+    [cant_ped]             INT          NULL,
+    [precio_far]           MONEY        NULL,
+    [importe_oferta]       MONEY        NULL,
+    [importe_pronto_pago]  MONEY        NULL,
+    [tipo_oferta]          VARCHAR (50) NULL,
+    [porcentaje_oferta]    MONEY        NULL,
+    [arch_tandem]          VARCHAR (50) NULL,
+    [status]               VARCHAR (50) NULL,
+    [timestamp]            DATETIME     NULL,
+    [remisionado]          INT          NULL,
+    [procesado_traductor]  INT          NOT NULL,
+    [fecha_procesado]      DATETIME     NULL,
+    [id_traductor]         VARCHAR (50) NULL,
+    [preicoOferta]         FLOAT (53)   NULL,
+    [precioNeto]           FLOAT (53)   NULL,
+    [ordenMarzam]          VARCHAR (50) NULL,
+    [cuentaMarzam]         VARCHAR (20) NULL
+);
+
+
+GO
+
+CREATE NONCLUSTERED INDEX [IX_pedidos_spt_fahorro_rollback]
+    ON [dbo].[pedidos_spt_fahorro_rollback]([orden] ASC);
+
+
+GO
+

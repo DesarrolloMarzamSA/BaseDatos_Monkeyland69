@@ -1,0 +1,6 @@
+CREATE SCHEMA [FSM]
+    AUTHORIZATION [dbo];
+
+
+GO
+

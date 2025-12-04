@@ -1,0 +1,14 @@
+
+-- Add two unsigned integers
+CREATE FUNCTION dbo.md5_add
+(
+@a INT,
+@b INT
+)
+RETURNS INT
+BEGIN
+   RETURN CONVERT(INT, SUBSTRING(CONVERT(VARBINARY, CONVERT(BIGINT, @a) + CONVERT(BIGINT, @b)), 5, 4))
+END
+
+GO
+

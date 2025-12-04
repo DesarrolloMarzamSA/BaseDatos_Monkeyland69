@@ -1,0 +1,5 @@
+CREATE USER [USrAppPyR] FOR LOGIN [USrAppPyR];
+
+
+GO
+

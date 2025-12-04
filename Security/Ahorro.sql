@@ -1,0 +1,6 @@
+CREATE SCHEMA [Ahorro]
+    AUTHORIZATION [dbo];
+
+
+GO
+

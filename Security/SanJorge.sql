@@ -1,0 +1,6 @@
+CREATE SCHEMA [SanJorge]
+    AUTHORIZATION [dbo];
+
+
+GO
+

@@ -1,0 +1,20 @@
+CREATE TABLE [dbo].[rutas_tandem_prueba] (
+    [letra]            VARCHAR (1)  NOT NULL,
+    [sucursal]         TINYINT      NOT NULL,
+    [interfase]        VARCHAR (30) NULL,
+    [ip]               VARCHAR (30) NULL,
+    [usuario]          VARCHAR (30) NULL,
+    [password]         VARCHAR (30) NULL,
+    [volumen]          VARCHAR (30) NULL,
+    [fact_elec]        VARCHAR (30) NULL,
+    [respuestas]       VARCHAR (30) NULL,
+    [ofertas]          VARCHAR (30) NULL,
+    [programa_ofertas] VARCHAR (50) NULL,
+    [facturacion]      VARCHAR (30) NULL,
+    PRIMARY KEY CLUSTERED ([sucursal] ASC) WITH (FILLFACTOR = 90),
+    FOREIGN KEY ([sucursal]) REFERENCES [dbo].[sucursales] ([sucursal])
+);
+
+
+GO
+

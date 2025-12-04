@@ -1,0 +1,24 @@
+CREATE TABLE [dbo].[pedidos_fregis_historia] (
+    [sucursal]         INT          NOT NULL,
+    [letra]            VARCHAR (1)  NULL,
+    [cuenta]           VARCHAR (5)  NOT NULL,
+    [cod_barras]       VARCHAR (13) NULL,
+    [codigo]           VARCHAR (12) NOT NULL,
+    [pedido]           VARCHAR (30) NOT NULL,
+    [cantidad_surtida] INT          NULL,
+    [cantidad_pedida]  INT          NOT NULL,
+    [arch_cliente]     VARCHAR (20) NULL,
+    [hora_resp_tandem] DATETIME     NULL,
+    [arch_tandem]      VARCHAR (20) NULL,
+    [rftp]             DATETIME     NULL,
+    [tftp]             DATETIME     NULL,
+    [hash_md5]         VARCHAR (50) NULL,
+    [orden]            INT          NOT NULL,
+    [mostrador]        VARCHAR (5)  NULL,
+    [descripcion]      VARCHAR (30) NULL,
+    PRIMARY KEY CLUSTERED ([pedido] ASC, [orden] ASC) WITH (FILLFACTOR = 90)
+);
+
+
+GO
+

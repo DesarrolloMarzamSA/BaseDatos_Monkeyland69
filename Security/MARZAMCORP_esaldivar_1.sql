@@ -1,0 +1,5 @@
+CREATE USER [MARZAMCORP\esaldivar] FOR LOGIN [MARZAMCORP\esaldivar];
+
+
+GO
+

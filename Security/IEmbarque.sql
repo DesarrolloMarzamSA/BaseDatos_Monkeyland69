@@ -1,0 +1,6 @@
+CREATE SCHEMA [IEmbarque]
+    AUTHORIZATION [dbo];
+
+
+GO
+

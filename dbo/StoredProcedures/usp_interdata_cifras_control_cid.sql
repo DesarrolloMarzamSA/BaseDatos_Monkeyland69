@@ -1,0 +1,48 @@
+CREATE procedure usp_interdata_cifras_control_cid
+@fecha datetime
+as
+--declare @fecha datetime
+--set @fecha = '2011-03-30'
+select	t3.suc_interdata suc_interdata,
+			t1.cliente cliente,
+			t2.codigos codigos,
+			sum(t2.cant_ped) cant_ped,
+			sum(	case 
+						t2.cant_base when 0 then 0 
+						else (t2.cant_ped / t2.cant_base) * t2.cant_ofert 
+					end) cant_ofert 
+into		#x_tabla1
+from		encabezado t1 inner join detalle t2 on t1.sucursal = t2.sucursal 
+			and t1.factura = t2.factura inner join sucursales t3 on 
+			t1.sucursal = t3.sucursal 
+where	--convert(datetime, fechaprog, 112)  = @fecha
+			t1.cliente <> '00000' and
+			substring(t2.codigos, 3, 2) <> '99' and
+			fechaprog  = convert(datetime, convert(varchar(10), @fecha, 121), 121)  
+			and t2.dest_det = 'AAA' and 
+			not ((t1.sucursal = 17 and t1.cliente = '12385') or
+			(t1.sucursal = 18 and t1.cliente = '32165') or
+			(t1.sucursal = 19 and t1.cliente = '32128'))
+group by 
+			t1.fechaprog,
+			t3.suc_interdata,
+			t1.cliente, 
+			t2.codigos
+having	sum(t2.cant_ped) > 0
+select	distinct 
+			case
+				when t1.suc_interdata = 2 then '  A'
+				else right(replicate('0', 3) + convert(varchar(3), t1.suc_interdata), 3)
+			end + 
+			replicate('0', 8) +
+			right(replicate('0', 6) + convert(varchar(6), count(t1.suc_interdata)), 6) +
+			right(replicate('0', 7) + convert(varchar(7), sum(t1.cant_ped)), 7) +
+			right(replicate('0', 6) + convert(varchar(6), convert(int, sum(t1.cant_ofert))), 6)
+from		#x_tabla1 t1
+group by 
+			t1.suc_interdata
+
+drop table #x_tabla1
+
+GO
+

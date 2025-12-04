@@ -1,0 +1,5 @@
+CREATE USER [MARZAMCORP\jfloresc];
+
+
+GO
+

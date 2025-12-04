@@ -1,0 +1,6 @@
+CREATE USER [dba]
+    WITH DEFAULT_SCHEMA = [dba];
+
+
+GO
+

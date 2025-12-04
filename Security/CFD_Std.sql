@@ -1,0 +1,6 @@
+CREATE SCHEMA [CFD_Std]
+    AUTHORIZATION [dbo];
+
+
+GO
+

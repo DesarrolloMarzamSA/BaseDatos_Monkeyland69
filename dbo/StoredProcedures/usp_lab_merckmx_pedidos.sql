@@ -1,0 +1,204 @@
+
+CREATE	--	CREATE	--	DROP
+PROCEDURE [dbo].[usp_lab_merckmx_pedidos] (@fecha VARCHAR(10)) 
+AS
+
+
+/*
+EXECUTE usp_lab_merckmx_pedidos '2012-05-07'
+SELECT * FROM lab_merckmx_pedidos
+SELECT * FROM lab_merckmx_control_pedidos
+*/
+
+--	pedidos
+--	27 OCT 2009					AGREGAR	LETRA A PUNTOS DE VENTA
+--	2010-03-03			SE AGREGO NUM SUCURSAL AL DOCUMENTO REF.
+--	06	SEP	2010					CORRECION EN FORMULA DE IMPORTE
+
+declare @sucursal INT
+
+IF EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES 
+    WHERE TABLE_TYPE='BASE TABLE' AND TABLE_NAME='lab_merckmx_pedidos') 
+	TRUNCATE TABLE lab_merckmx_pedidos
+ELSE
+		CREATE --	DROP
+		TABLE lab_merckmx_pedidos (
+			ClaveDist					VARCHAR(20)	,
+			ClaveSucDist			VARCHAR(20)	,
+			FechaDoc					VARCHAR(20)	,
+			Numero						VARCHAR(20)	,
+			ClaveCliente			VARCHAR(20)	,
+			ClaveSubd					VARCHAR(20)	,
+			MotCancel					VARCHAR(20)	,
+			CodigoMat					VARCHAR(20)	,
+			CodigoEAN					VARCHAR(20)	,
+			CantSolic					INT					,
+			UnidadMedida			VARCHAR(20)	,
+			PrecioUnit				MONEY				,
+			Valor							MONEY				,
+			CantFaltante			INT					,
+			MotFaltante				VARCHAR(20)	
+			PRIMARY KEY (ClaveSucDist, ClaveCliente, FechaDoc, Numero, CodigoMat, CodigoEAN, CantSolic)	--	CantSolic
+)
+
+DECLARE cursor_sucursales CURSOR FORWARD_ONLY FOR 
+	SELECT sucursal FROM SUCURSALES
+
+OPEN cursor_sucursales
+FETCH FROM cursor_sucursales INTO @sucursal
+
+SELECT *
+INTO #productos_merckmx
+FROM maestro_productos mpb
+where mpb.lab_corto IN (SELECT lab_corto FROM lab_fusiones WHERE id_lab = 'MERCKMX')
+	--AND mpb.cod_barras IS NOT NULL											AND
+
+ALTER TABLE #productos_merckmx ADD PRIMARY KEY (codigo)
+
+WHILE @@fetch_status = 0
+BEGIN
+
+	SELECT		--  TOP 25
+	'MARZAM'																					ClaveDist,	--	enc.sucursal
+	RIGHT(REPLICATE('0',2)+CONVERT(VARCHAR,enc.Sucursal),2)		ClaveSucDist,	--	z.AZM
+	convert(VARCHAR(12),convert(SMALLDATETIME,fechaprog,121),104)			FechaDoc,	--	
+	convert(varchar,convert(int,enc.factura))									Numero,
+--RIGHT(REPLICATE('0',2)+CONVERT(VARCHAR,enc.Sucursal),2)	+
+--	s.serie_cfd +
+--	enc.factura																								Numero,
+	enc.cliente																								ClaveCliente,
+	'NA'																											ClaveSubd,
+	'NA'																											MotCancel,
+	CONVERT(VARCHAR,CONVERT(INT,mpb.codigo))									CodigoMat,
+	mpb.cod_barras																						CodigoEAN,
+	det.cant_ped																							CantSolic,
+	'PZA'																											UnidadMedida,
+	det.prec_farm																							PrecioUnit,
+--	mpb.p_costo																								PrecioUnit,
+	CONVERT(MONEY,det.cant_ped * det.prec_farm)								Valor,
+	--	det.cant_ped * mpb.p_costo																Valor,
+																							
+	CASE	WHEN det.dest_det = 'FEA' THEN det.cant_ped
+				WHEN det.dest_det = 'FEP' THEN det.cant_ped 
+				WHEN det.dest_det = 'AAA' THEN 0 
+				ELSE 0										END												CantFaltante,
+	
+	CASE	WHEN det.dest_det = 'FEA' THEN 'AG'
+				WHEN det.dest_det = 'FEP' THEN 'FA' 
+				WHEN det.dest_det = 'AAA' THEN 'NA' 
+				ELSE 'ND'									END												MotFaltante
+	INTO #tmp_lab_merckmx_pedidos
+	FROM	encabezado enc  WITH (NOLOCK)
+	INNER JOIN sucursales s ON s.sucursal = enc.sucursal
+	INNER JOIN detalle det WITH (NOLOCK) on enc.sucursal = det.sucursal AND enc.factura = det.factura /*AND
+		DATEADD(DD, -7, CONVERT(SMALLDATETIME,@fecha,121))  >= det.timestamp*/
+	INNER JOIN #productos_merckmx mpb WITH (NOLOCK) ON	'00' + mpb.codigo = det.codigos
+--	INNER JOIN sucursales_azm Z on Z.SUCURSAL = enc.sucursal
+
+	WHERE 
+	enc.sucursal =  @sucursal												AND
+	enc.fechaprog = CONVERT(SMALLDATETIME, @fecha, 121) AND	--	'2012-01-27'
+	--	BETWEEN	DATEADD(DD, -7, CONVERT(SMALLDATETIME,@fecha,121) ) AND CONVERT(SMALLDATETIME,@fecha,121)	AND
+	
+--	enc.fechaprog = convert(datetime, convert(varchar(10),current_timestamp,121), 121) and	--	'2009-05-27'
+	det.dest_det in ('AAA', 'FEA', 'FEP')
+
+
+--ALTER TABLE #tmp_lab_merckmx_pedidos 
+--	ADD PRIMARY KEY (ClaveSucDist, ClaveCliente, FechaDoc, Numero, CodigoMat, CodigoEAN, CantSolic)
+
+	INSERT INTO lab_merckmx_pedidos 
+		SELECT 
+			ClaveDist,
+			ClaveSucDist,
+			FechaDoc,
+			Numero,
+			ClaveCliente,
+			ClaveSubd,
+			MotCancel,
+			CodigoMat,
+			CodigoEAN,
+			CantSolic,
+			UnidadMedida,
+			PrecioUnit,
+			Valor,
+			CantFaltante,
+			MotFaltante
+		FROM #tmp_lab_merckmx_pedidos	;
+
+	DROP TABLE #tmp_lab_merckmx_pedidos
+	FETCH NEXT FROM cursor_sucursales INTO @sucursal
+END
+
+CLOSE cursor_sucursales
+DEALLOCATE cursor_sucursales
+
+UPDATE lab_merckmx_pedidos 
+SET ClaveSucDist = RIGHT(REPLICATE('0',2) + CONVERT(VARCHAR,suc.almacen) ,2)
+FROM lab_merckmx_pedidos pedidos
+INNER JOIN sucursales suc ON CONVERT(INT,pedidos.ClaveSucDist) = suc.sucursal
+
+UPDATE lab_merckmx_pedidos 
+SET ClaveCliente = CONVERT(VARCHAR,suc.ibs_letra) + RIGHT(REPLICATE('0',5)+ ClaveCliente  ,5)
+FROM lab_merckmx_pedidos pedidos
+INNER JOIN sucursales suc ON CONVERT(INT,pedidos.ClaveSucDist) = suc.sucursal
+
+DECLARE @total_registros		INT
+DECLARE @sum_ean						BIGINT
+DECLARE @sum_cantidad				INT
+DECLARE @sum_precio					DECIMAL(12,2)
+DECLARE @sum_valor					DECIMAL(12,2)
+DECLARE @sum_cant_faltante	INT
+
+IF EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES 
+    WHERE TABLE_TYPE='BASE TABLE' AND TABLE_NAME='lab_merckmx_control_pedidos') 
+	TRUNCATE TABLE lab_merckmx_control_pedidos
+ELSE
+	CREATE TABLE lab_merckmx_control_pedidos	(
+		TotalRegistros		INT						NOT NULL,
+		SumaEAN						BIGINT				NOT NULL,
+		SumaCantidad			INT						NOT NULL,
+		SumaPrecio				MONEY					NOT NULL,
+		SumaValor					MONEY					NOT NULL,
+		SumaCantFaltante	INT						NOT NULL	
+		PRIMARY KEY (TotalRegistros, SumaEAN,SumaCantidad, SumaPrecio, SumaValor, SumaCantFaltante)			
+		)
+
+SET @total_registros		= (SELECT ISNULL(COUNT(*)												,0)	FROM lab_merckmx_pedidos)
+SET @sum_ean						= (SELECT ISNULL(SUM(CONVERT(BIGINT,CodigoEAN))	,0)	FROM lab_merckmx_pedidos)-- GROUP BY ean
+SET @sum_cantidad				= (SELECT ISNULL(SUM(CantSolic)									,0)	FROM lab_merckmx_pedidos)-- GROUP BY valor
+SET @sum_precio					= (SELECT ISNULL(SUM(PrecioUnit)								,0)	FROM lab_merckmx_pedidos)-- GROUP BY precio
+SET @sum_valor					= (SELECT ISNULL(SUM(Valor)											,0)	FROM lab_merckmx_pedidos)-- GROUP BY valor
+SET @sum_cant_faltante	= (SELECT ISNULL(SUM(CantFaltante)							,0)	FROM lab_merckmx_pedidos)-- GROUP BY valor
+
+
+INSERT INTO lab_merckmx_control_pedidos
+SELECT
+	 @total_registros			TotalRegistros,
+	 @sum_ean							SumaEAN,
+	 @sum_cantidad				SumaCantidad,
+	 @sum_precio					SumaPrecio,
+	 @sum_valor						SumaValor,
+	 @sum_cant_faltante		SumaCantFaltante
+
+SELECT 
+	 LEFT(ClaveDist					 													+ REPLICATE(' ',10) 						,10)	ClaveDist					,
+	RIGHT(REPLICATE(' ',10)  													+ ClaveSucDist			 						,10)	ClaveSucDist			,
+	 LEFT(FechaDoc					 													+ REPLICATE(' ',10) 						,10)	FechaDoc					,
+	 LEFT(Numero						 													+ REPLICATE(' ',10) 						,10)	Numero						,
+	RIGHT(REPLICATE(' ',15)  													+ ClaveCliente									,15)	ClaveCliente			,
+	RIGHT(REPLICATE(' ',10)	 													+ ClaveSubd				 							,10)	ClaveSubd					,
+	RIGHT(REPLICATE(' ', 3)	 													+ MotCancel				 							, 3)	MotCancel					,
+	 LEFT(CodigoMat					 													+ REPLICATE(' ',18) 						,15)	CodigoMat					,
+	 LEFT(CONVERT(VARCHAR,CONVERT(BIGINT,CodigoEAN)	)	+ REPLICATE(' ',18) 						,18)	CodigoEAN					,
+	 LEFT(CONVERT(VARCHAR,CantSolic)									+ REPLICATE(' ',10) 						,18)	CantSolic					,
+	RIGHT(REPLICATE(' ', 3)														+ UnidadMedida									, 3)	UnidadMedida			,
+	RIGHT(REPLICATE(' ',18)														+ CONVERT(VARCHAR,PrecioUnit)		,18)	PrecioUnit				,
+	 LEFT(Valor																				+	REPLICATE(' ',03)							,21)	Valor							,
+	RIGHT(REPLICATE(' ',18) 													+ CONVERT(VARCHAR,CantFaltante)	,10) 	CantFaltante			,
+	RIGHT(REPLICATE(' ', 3) 													+ MotFaltante										, 3) 	MotFaltante					
+FROM lab_merckmx_pedidos
+ORDER BY ClaveSucDist, Numero
+
+GO
+

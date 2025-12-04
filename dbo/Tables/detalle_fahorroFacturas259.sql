@@ -1,0 +1,41 @@
+CREATE TABLE [dbo].[detalle_fahorroFacturas259] (
+    [SUCURSAL]           INT             NOT NULL,
+    [SERIE]              VARCHAR (10)    NULL,
+    [IDCUNO]             VARCHAR (11)    NOT NULL,
+    [NANCA1]             VARCHAR (12)    NULL,
+    [IDINVN]             NUMERIC (12)    NOT NULL,
+    [FACTURA]            VARCHAR (24)    NOT NULL,
+    [IDLINE]             NUMERIC (5)     NOT NULL,
+    [IDPRDC]             VARCHAR (50)    NOT NULL,
+    [PCXPRC]             NUMERIC (13)    NULL,
+    [IDDESC]             VARCHAR (50)    NOT NULL,
+    [IDQTY]              NUMERIC (15, 3) NOT NULL,
+    [CF]                 VARCHAR (50)    NOT NULL,
+    [FARMACIA]           NUMERIC (18, 4) NOT NULL,
+    [UNITARIO]           NUMERIC (18, 4) NOT NULL,
+    [PUBLICO]            NUMERIC (18, 4) NOT NULL,
+    [PRECIO_CANTIDAD]    NUMERIC (13, 2) NOT NULL,
+    [NETO_UNITARIO]      NUMERIC (13, 2) NOT NULL,
+    [NETO_CANTIDAD]      NUMERIC (13, 2) NOT NULL,
+    [IVA]                NUMERIC (4, 2)  NULL,
+    [IEPS]               NUMERIC (13, 2) NOT NULL,
+    [IEPS_MONEDA]        NUMERIC (13, 2) NULL,
+    [TOTAL_IEPS]         NUMERIC (13, 2) NULL,
+    [IVA_MONEDA]         NUMERIC (13, 2) NULL,
+    [TOTAL_FINAL]        NUMERIC (13, 2) NULL,
+    [DTDCPR]             NUMERIC (13, 2) NOT NULL,
+    [DESCOFERTA]         VARCHAR (50)    NULL,
+    [DESCCOMERCIAL]      VARCHAR (15)    NULL,
+    [DescComercialPesos] VARCHAR (50)    NULL,
+    [IDGDSQ]             NUMERIC (15)    NOT NULL,
+    [FECHAPROG]          DATETIME2 (7)   NOT NULL,
+    [IHOREF]             VARCHAR (35)    NOT NULL,
+    [NATREG]             VARCHAR (50)    NOT NULL,
+    [PERIODO]            INT             NULL,
+    [RECALCULO]          INT             NULL,
+    [HashCode]           BIGINT          NULL
+);
+
+
+GO
+

@@ -1,0 +1,19 @@
+CREATE TABLE [Ahorro].[TmpFacturaFaltante] (
+    [IDORNO] NUMERIC (12)    NOT NULL,
+    [OHCUNO] CHAR (11)       NOT NULL,
+    [NANCA1] CHAR (6)        NOT NULL,
+    [IDINVN] NUMERIC (12)    NOT NULL,
+    [IDLINE] NUMERIC (5)     NOT NULL,
+    [IDPRDC] CHAR (35)       NOT NULL,
+    [IDDESC] CHAR (50)       NOT NULL,
+    [IDQTY]  NUMERIC (15, 3) NOT NULL,
+    [IDPCA5] CHAR (5)        NOT NULL,
+    [IDSALP] NUMERIC (17, 4) NOT NULL,
+    [IDNPRC] NUMERIC (17, 4) NOT NULL,
+    [IDAMOU] NUMERIC (17, 4) NOT NULL,
+    [OHSURF] CHAR (35)       NOT NULL
+);
+
+
+GO
+

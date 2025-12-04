@@ -1,0 +1,5 @@
+CREATE USER [MARZAMCORP\ohernandezl] FOR LOGIN [MARZAMCORP\ohernandezl];
+
+
+GO
+

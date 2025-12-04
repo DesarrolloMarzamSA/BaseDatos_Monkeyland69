@@ -1,0 +1,6 @@
+CREATE SCHEMA [IQVIA]
+    AUTHORIZATION [dbo];
+
+
+GO
+

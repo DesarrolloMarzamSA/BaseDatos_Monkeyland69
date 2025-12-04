@@ -1,0 +1,11 @@
+
+--Converts integer into binary(4)
+CREATE FUNCTION dbo.md5_int2bin
+(@x INT)
+RETURNS BINARY(4)
+BEGIN
+   RETURN SUBSTRING(CONVERT(BINARY(4), @x), 4, 1) + SUBSTRING(CONVERT(BINARY(4), @x), 3, 1) + SUBSTRING(CONVERT(BINARY(4), @x), 2, 1) + SUBSTRING(CONVERT(BINARY(4), @x), 1, 1)
+END
+
+GO
+

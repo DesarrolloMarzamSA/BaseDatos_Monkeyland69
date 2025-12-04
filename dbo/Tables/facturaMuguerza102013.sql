@@ -1,0 +1,42 @@
+CREATE TABLE [dbo].[facturaMuguerza102013] (
+    [SUCURSAL]     FLOAT (53)     NULL,
+    [FACTURA]      FLOAT (53)     NULL,
+    [SERIE]        NVARCHAR (255) NULL,
+    [CLIENTE]      NVARCHAR (255) NULL,
+    [RUTA]         NVARCHAR (255) NULL,
+    [FARMACIA]     NVARCHAR (255) NULL,
+    [ETIQUETAS]    NVARCHAR (255) NULL,
+    [DOMICILIO]    NVARCHAR (255) NULL,
+    [RESTODIG]     NVARCHAR (255) NULL,
+    [NUMDIG]       NVARCHAR (255) NULL,
+    [POBLACION]    NVARCHAR (255) NULL,
+    [PASSWORD]     NVARCHAR (255) NULL,
+    [HORACAP]      DATETIME       NULL,
+    [BULTO]        FLOAT (53)     NULL,
+    [IMPORTE]      FLOAT (53)     NULL,
+    [CONTROLADO]   NVARCHAR (255) NULL,
+    [DESCTOESP]    FLOAT (53)     NULL,
+    [DUENO]        NVARCHAR (255) NULL,
+    [RUTAF]        NVARCHAR (255) NULL,
+    [FECHAPROG]    DATETIME       NULL,
+    [ORDEN]        FLOAT (53)     NULL,
+    [FECHAALTA]    DATETIME       NULL,
+    [SEGTO]        NVARCHAR (255) NULL,
+    [CTEPADRE]     FLOAT (53)     NULL,
+    [TIMESTAMP]    DATETIME       NULL,
+    [FOLIO_FISCAL] FLOAT (53)     NULL,
+    [CONSECUTIVO]  FLOAT (53)     NULL,
+    [IBS_ORNO]     FLOAT (53)     NULL,
+    [IHCUNO]       NVARCHAR (255) NULL,
+    [RFC]          NVARCHAR (255) NULL,
+    [IHIAET]       FLOAT (53)     NULL,
+    [IHIAIT]       FLOAT (53)     NULL,
+    [FACTURAIBS]   FLOAT (53)     NULL,
+    [archivoXML]   VARCHAR (250)  NULL,
+    [rutaXML]      VARCHAR (MAX)  NULL,
+    [msgWeb]       VARCHAR (MAX)  NULL
+);
+
+
+GO
+

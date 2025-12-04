@@ -1,0 +1,5 @@
+CREATE USER [Cesar];
+
+
+GO
+

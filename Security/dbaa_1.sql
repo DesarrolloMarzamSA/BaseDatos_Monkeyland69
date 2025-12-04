@@ -1,0 +1,6 @@
+CREATE SCHEMA [dbaa]
+    AUTHORIZATION [dbaa];
+
+
+GO
+

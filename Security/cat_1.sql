@@ -1,0 +1,6 @@
+CREATE SCHEMA [cat]
+    AUTHORIZATION [cat];
+
+
+GO
+

@@ -1,0 +1,40 @@
+CREATE TABLE [dbo].[ctlogR99900] (
+    [PRODUCTO]              FLOAT (53)     NULL,
+    [P_FARMACIA]            FLOAT (53)     NULL,
+    [OFERTA]                FLOAT (53)     NULL,
+    [COMERCIAL]             FLOAT (53)     NULL,
+    [CONFIDENCIAL]          FLOAT (53)     NULL,
+    [P_FINAL_SIN_IMPUESTOS] FLOAT (53)     NULL,
+    [P_PUBLICO]             FLOAT (53)     NULL,
+    [DESDE]                 FLOAT (53)     NULL,
+    [HASTA]                 FLOAT (53)     NULL,
+    [PGPDGR]                NVARCHAR (255) NULL,
+    [PGPPGR]                NVARCHAR (255) NULL,
+    [PGPGRP]                NVARCHAR (255) NULL,
+    [PGAGRP]                FLOAT (53)     NULL,
+    [PGPCA1]                FLOAT (53)     NULL,
+    [PGPCA2]                NVARCHAR (255) NULL,
+    [PGPCA3]                FLOAT (53)     NULL,
+    [PGPCA4]                NVARCHAR (255) NULL,
+    [PGPCA5]                NVARCHAR (255) NULL,
+    [PGPCA6]                FLOAT (53)     NULL,
+    [PGPRFA]                NVARCHAR (255) NULL,
+    [PGPRSE]                NVARCHAR (255) NULL,
+    [PGDESC]                NVARCHAR (255) NULL,
+    [MSMDEC]                NVARCHAR (255) NULL,
+    [EXISTENCIA]            FLOAT (53)     NULL,
+    [PXTX50]                NVARCHAR (255) NULL,
+    [PJEANP]                FLOAT (53)     NULL,
+    [CTPCT1]                NVARCHAR (255) NULL,
+    [CTPCT2]                NVARCHAR (255) NULL,
+    [CTPCT6]                NVARCHAR (255) NULL,
+    [DEVOLUCION]            NVARCHAR (255) NULL,
+    [DEV_DIAS_ANTES]        FLOAT (53)     NULL,
+    [DEV_DIAS_DESPUES]      NVARCHAR (255) NULL,
+    [IVA]                   FLOAT (53)     NULL,
+    [IEPS]                  FLOAT (53)     NULL
+);
+
+
+GO
+

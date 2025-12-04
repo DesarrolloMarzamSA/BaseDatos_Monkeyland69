@@ -1,0 +1,6 @@
+CREATE SCHEMA [dba]
+    AUTHORIZATION [dba];
+
+
+GO
+

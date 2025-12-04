@@ -1,0 +1,41 @@
+CREATE TABLE [sap].[facturacion_fsmart_sap] (
+    [ID]                    INT             IDENTITY (1, 1) NOT NULL,
+    [VWERK]                 VARCHAR (60)    NOT NULL,
+    [PARTNER]               VARCHAR (60)    NOT NULL,
+    [XBLNR]                 VARCHAR (60)    NULL,
+    [VBELN]                 VARCHAR (60)    NOT NULL,
+    [FKDAT]                 DATE            NULL,
+    [POSNR]                 VARCHAR (60)    NOT NULL,
+    [MATNR]                 VARCHAR (60)    NOT NULL,
+    [ARKTX]                 VARCHAR (60)    NULL,
+    [CHARG]                 VARCHAR (60)    NULL,
+    [EAN11]                 VARCHAR (60)    NULL,
+    [KONDM]                 VARCHAR (60)    NULL,
+    [CANTIDAD]              DECIMAL (13, 3) NULL,
+    [PRECIOFARMACIA]        DECIMAL (15, 2) NULL,
+    [PRECIO_PUBLICO]        DECIMAL (15, 2) NULL,
+    [PRECIO_PUBLICO_IMP]    DECIMAL (15, 2) NULL,
+    [IMPORTE_BRUTO]         DECIMAL (15, 2) NULL,
+    [PORCENTAJE_OFERTAS]    DECIMAL (15, 2) NULL,
+    [OFERTAS]               DECIMAL (15, 2) NULL,
+    [PORCENTAJE_DESCUENTOS] DECIMAL (15, 2) NULL,
+    [DESCUENTOS]            DECIMAL (15, 2) NULL,
+    [IEPS]                  DECIMAL (15, 2) NULL,
+    [IVA]                   DECIMAL (15, 2) NULL,
+    [IMPORTE_NETO]          DECIMAL (15, 2) NULL,
+    [BSTKD]                 VARCHAR (60)    NULL,
+    [PORC_TMX1]             DECIMAL (15, 2) NULL,
+    [PORC_TMX2]             DECIMAL (15, 2) NULL,
+    [IND_SECTOR]            VARCHAR (60)    NULL,
+    [KNRZE]                 VARCHAR (60)    NULL,
+    [TAXNUM]                VARCHAR (60)    NULL,
+    [IDNUMBER]              VARCHAR (60)    NULL,
+    [ALTKN]                 VARCHAR (10)    NULL,
+    [NAME_ORG1]             VARCHAR (60)    NULL,
+    [FECHA_REFISTRO]        DATETIME        CONSTRAINT [DF_facturacion_fsmart_sap_FECHA_REFISTRO] DEFAULT (getdate()) NULL,
+    CONSTRAINT [PK_facturacion_fsmart_sap] PRIMARY KEY CLUSTERED ([ID] ASC, [VWERK] ASC, [PARTNER] ASC, [VBELN] ASC, [POSNR] ASC, [MATNR] ASC)
+);
+
+
+GO
+

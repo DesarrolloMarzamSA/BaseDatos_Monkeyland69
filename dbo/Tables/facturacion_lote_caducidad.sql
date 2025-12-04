@@ -1,0 +1,34 @@
+CREATE TABLE [dbo].[facturacion_lote_caducidad] (
+    [IDIDAT]        NUMERIC (8)     NOT NULL,
+    [IDINVN]        NUMERIC (12)    NOT NULL,
+    [FACTURA]       VARCHAR (50)    NOT NULL,
+    [SERIE]         VARCHAR (10)    NOT NULL,
+    [IDCUNO]        VARCHAR (50)    NOT NULL,
+    [IDLINE]        NUMERIC (18)    NOT NULL,
+    [IDPRDC]        VARCHAR (50)    NOT NULL,
+    [IDDESC]        VARCHAR (450)   NULL,
+    [IDPLNO]        NUMERIC (12)    NULL,
+    [IDQTY]         NUMERIC (15, 3) NULL,
+    [LTTRAQ]        NUMERIC (15, 3) NOT NULL,
+    [LTBATC]        VARCHAR (100)   NOT NULL,
+    [LTUSBD]        NUMERIC (8)     NOT NULL,
+    [NANCA1]        VARCHAR (100)   NOT NULL,
+    [FECHAREGISTRO] DATETIME        CONSTRAINT [DF_facturacion_lote_caducidad_FECHAREGISTRO] DEFAULT (getdate()) NULL,
+    CONSTRAINT [PK_facturacion_lote_caducidad] PRIMARY KEY CLUSTERED ([IDINVN] ASC, [SERIE] ASC, [IDCUNO] ASC, [IDLINE] ASC, [IDPRDC] ASC, [LTTRAQ] ASC, [LTBATC] ASC, [LTUSBD] ASC, [NANCA1] ASC) WITH (FILLFACTOR = 90)
+);
+
+
+GO
+
+CREATE NONCLUSTERED INDEX [NonClusteredIndex-20150910-165616]
+    ON [dbo].[facturacion_lote_caducidad]([FACTURA] ASC, [SERIE] ASC, [IDCUNO] ASC, [IDPRDC] ASC, [LTBATC] ASC, [LTUSBD] ASC, [NANCA1] ASC) WITH (FILLFACTOR = 90);
+
+
+GO
+
+CREATE NONCLUSTERED INDEX [NonClusteredIndex-20150910-165513]
+    ON [dbo].[facturacion_lote_caducidad]([IDIDAT] ASC, [IDINVN] ASC, [FACTURA] ASC, [SERIE] ASC, [IDCUNO] ASC, [IDLINE] ASC, [IDPRDC] ASC, [LTBATC] ASC, [LTUSBD] ASC, [NANCA1] ASC) WITH (FILLFACTOR = 90);
+
+
+GO
+

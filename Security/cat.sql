@@ -1,0 +1,6 @@
+CREATE USER [cat]
+    WITH DEFAULT_SCHEMA = [cat];
+
+
+GO
+

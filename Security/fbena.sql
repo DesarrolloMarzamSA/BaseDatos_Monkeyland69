@@ -1,0 +1,6 @@
+CREATE SCHEMA [fbena]
+    AUTHORIZATION [dbo];
+
+
+GO
+
