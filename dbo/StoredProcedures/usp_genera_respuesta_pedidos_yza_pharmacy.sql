@@ -1,13 +1,11 @@
-CREATE PROCEDURE [dbo].[usp_genera_respuesta_pedidos_yza_pharmacy]
-@arch_cliente VARCHAR (50), @hash_md5 VARCHAR (50)
-WITH ENCRYPTION
-AS
-BEGIN
---El cuerpo del script estaba cifrado y no se puede reproducir aquí.
-    RETURN
-END
-
-
-
+﻿USE monkeyland
 GO
-
+SET ANSI_NULLS, QUOTED_IDENTIFIER ON
+GO
+CREATE procedure [dbo].[usp_genera_respuesta_pedidos_yza_pharmacy]
+	@arch_cliente varchar(50),  
+	@hash_md5 varchar(50)
+WITH ENCRYPTION
+as
+select 'Pedidos Respuestas Yza Pharmacy esta listo para entregar respuesta'
+GO

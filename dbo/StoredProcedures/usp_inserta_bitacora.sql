@@ -1,13 +1,9 @@
-CREATE PROCEDURE [dbo].[usp_inserta_bitacora]
-@interfase VARCHAR (100), @mensaje VARCHAR (1500), @resultado INT
-WITH ENCRYPTION
-AS
-BEGIN
---El cuerpo del script estaba cifrado y no se puede reproducir aquí.
-    RETURN
-END
-
-
-
+﻿USE monkeyland
 GO
-
+SET ANSI_NULLS, QUOTED_IDENTIFIER ON
+GO
+CREATE procedure [dbo].[usp_inserta_bitacora] @interfase varchar(100), @mensaje varchar(1500), @resultado int
+WITH ENCRYPTION
+as
+insert into bitacora(interfase, mensaje, resultado, timestamp) values(@interfase, @mensaje, @resultado, current_timestamp)
+GO

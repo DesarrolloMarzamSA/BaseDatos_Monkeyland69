@@ -1,13 +1,120 @@
-CREATE PROCEDURE [dbo].[usp_inserta_pedidos_klyns]
-@cod_barras VARCHAR (13), @cant_ped INT, @codigo VARCHAR (7), @arch_cliente VARCHAR (50), @orden VARCHAR (50), @hash_md5 VARCHAR (50), @enviado_ftp CHAR (10), @codigo_farmacia VARCHAR (20), @eindicador CHAR (10), @efecha CHAR (10), @esucursal CHAR (10), @eordencompra VARCHAR (20), @eproveedor VARCHAR (20), @erenglones VARCHAR (20), @eimportesiva VARCHAR (50), @eimporteiva VARCHAR (50), @eimporteciva VARCHAR (50), @dindicador CHAR (10), @drenglon CHAR (10), @drefklyns VARCHAR (20), @dprecio MONEY, @dpordescto1 MONEY, @dpordescto2 MONEY, @dpordescto3 MONEY, @dporoferta MONEY, @diva MONEY, @dpreciounitsiva MONEY, @dimportesiva MONEY, @dimporteciva MONEY
-WITH ENCRYPTION
-AS
-BEGIN
---El cuerpo del script estaba cifrado y no se puede reproducir aquí.
-    RETURN
-END
-
-
-
+﻿USE monkeyland
 GO
-
+SET ANSI_NULLS, QUOTED_IDENTIFIER ON
+GO
+CREATE procedure [dbo].[usp_inserta_pedidos_klyns]
+	--@sucursal tinyint,
+	--@cliente varchar(15),
+	@cod_barras varchar(13),
+	@cant_ped int,
+	@codigo varchar(7),
+	@arch_cliente varchar(50),
+	@orden varchar(50),
+	@hash_md5 varchar(50),
+	@enviado_ftp char(10),
+	@codigo_farmacia varchar(20),
+	@eindicador char(10),
+	@efecha char(10),
+	@esucursal char(10),
+	@eordencompra varchar(20),
+	@eproveedor varchar(20),
+	@erenglones varchar(20),
+	@eimportesiva varchar(50),
+	@eimporteiva varchar(50),
+	@eimporteciva varchar(50),
+	@dindicador char(10),
+	@drenglon char(10),
+	@drefklyns varchar(20),
+	@dprecio money,
+	@dpordescto1 money,
+	@dpordescto2 money,
+	@dpordescto3 money,
+	@dporoferta money,
+	@diva money,
+	@dpreciounitsiva money,
+	@dimportesiva money,
+	@dimporteciva money
+WITH ENCRYPTION
+as	
+    declare @x_Sucursal tinyint
+	declare @x_Cliente varchar(5)  
+		
+	select	@x_Sucursal = sucursal
+	from	klyns_cat_cuentas
+	where	nodo = @codigo_farmacia
+	
+	select	@x_Cliente = cliente
+	from	klyns_cat_cuentas
+	where	nodo = @codigo_farmacia
+	
+	insert into	pedidos_klyns
+					(
+						sucursal,
+						cliente,
+						cod_barras,
+						cant_ped,
+						codigo,
+						arch_cliente,
+						orden,
+						hash_md5,
+						fecha_pedido,
+						enviado_ftp,
+						codigo_farmacia,
+						eindicador,
+						efecha,
+						esucursal,
+						eordencompra,
+						eproveedor,
+						erenglones,
+						eimportesiva,
+						eimporteiva,
+						eimporteciva,
+						dindicador,
+						drenglon,
+						drefklyns,
+						dprecio,
+						dpordescto1,
+						dpordescto2,
+						dpordescto3,
+						dporoferta,
+						diva,
+						dpreciounitsiva,
+						dimportesiva,
+						dimporteciva					
+					) 
+	values		
+					(
+						@x_Sucursal,
+						@x_Cliente,
+						@cod_barras,
+						@cant_ped,
+						@codigo,
+						@arch_cliente,
+						@orden,
+						@hash_md5,
+						current_timestamp,
+						@enviado_ftp,
+						@codigo_farmacia,
+						@eindicador,
+						@efecha,
+						@esucursal,
+						@eordencompra,
+						@eproveedor,
+						@erenglones,
+						@eimportesiva,
+						@eimporteiva,
+						@eimporteciva,
+						@dindicador,
+						@drenglon,
+						@drefklyns,
+						@dprecio,
+						@dpordescto1,
+						@dpordescto2,
+						@dpordescto3,
+						@dporoferta,
+						@diva,
+						@dpreciounitsiva,
+						@dimportesiva,
+						@dimporteciva	
+					)
+GO
