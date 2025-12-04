@@ -1,12 +1,13 @@
-CREATE PROCEDURE [dbo].[usp_fanasa_reproc_full]
-WITH ENCRYPTION
-AS
-BEGIN
---El cuerpo del script estaba cifrado y no se puede reproducir aquí.
-    RETURN
-END
-
-
-
+﻿USE monkeyland
+GO
+SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 
+CREATE procedure [dbo].[usp_fanasa_reproc_full]
+WITH ENCRYPTION
+as
+SELECT * FROM OPENQUERY(as400,'select IHORNO orno,IHCUNO cuenta,''MA4620EF04'' compania_ibs,IHIDAT fecha  from MA4620EF04.SR4ISH 
+INNER JOIN MA4620EF04.SRONAM ON IHCUNO=NANUM
+WHERE NANCA1=''99496'' AND IHIDAT=''20130425''
+ORDER BY IHIDAT,IHCUNO')
+GO

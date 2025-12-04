@@ -1,12 +1,24 @@
-CREATE PROCEDURE [dbo].[usp_farmacon_actualiza_codigo_marzam]
+﻿USE monkeyland
+GO
+SET ANSI_NULLS, QUOTED_IDENTIFIER ON
+GO
+
+-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date,,>
+-- Description:	<Description,,>
+-- =============================================
+CREATE PROCEDURE [dbo].[usp_farmacon_actualiza_codigo_marzam] 
 WITH ENCRYPTION
 AS
 BEGIN
---El cuerpo del script estaba cifrado y no se puede reproducir aquí.
-    RETURN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+	update pedidos_farmacon
+	set codigo=[monkeyland].[dbo].EantoMarzam(cod_barras)
+
 END
 
-
-
 GO
-

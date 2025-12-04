@@ -1,12 +1,23 @@
-CREATE PROCEDURE [dbo].[usp_feltrebol_pedidos_codigos]
+﻿USE monkeyland
+GO
+SET ANSI_NULLS, QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE	--	CREATE
+PROCEDURE [dbo].[usp_feltrebol_pedidos_codigos]
 WITH ENCRYPTION
 AS
-BEGIN
---El cuerpo del script estaba cifrado y no se puede reproducir aquí.
-    RETURN
-END
+
+
+UPDATE pedidos_ftrebol SET 
+	codigo = mp.codigo
+FROM pedidos_ftrebol pt
+INNER JOIN maestro_productos_baan mp ON mp.cod_barras = pt.cod_barras
+
+DELETE FROM pedidos_ftrebol 
+WHERE codigo > dbo.gobierno()
 
 
 
 GO
-
