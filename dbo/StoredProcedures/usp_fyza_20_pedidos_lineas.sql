@@ -1,13 +1,23 @@
-CREATE PROCEDURE [dbo].[usp_fyza_20_pedidos_lineas]
-@sucursal INT, @cliente VARCHAR (5), @pedido VARCHAR (16)
+﻿USE monkeyland
+GO
+SET ANSI_NULLS, QUOTED_IDENTIFIER ON
+GO
+CREATE --	CREATE
+PROCEDURE [dbo].[usp_fyza_20_pedidos_lineas]
+@sucursal INT, @cliente VARCHAR(5), @pedido VARCHAR(16)
 WITH ENCRYPTION
 AS
-BEGIN
---El cuerpo del script estaba cifrado y no se puede reproducir aquí.
-    RETURN
-END
+/*
+
+EXECUTE usp_fyza_20_pedidos_lineas 5, '06216','0000002420' 
+*/
 
 
-
+SELECT sucursal, letra, cliente, arch_cliente, pedido, codigo, SUM(cantidad_pedida) cantidad 
+FROM pedidos_fyza_20  ped 
+WHERE ped.sucursal = @sucursal
+AND ped.pedido =  @pedido
+AND ped.cliente =  @cliente
+GROUP BY sucursal, letra, cliente, arch_cliente, pedido, codigo 
+ORDER BY sucursal, letra, cliente, arch_cliente, pedido, codigo 
 GO
-
