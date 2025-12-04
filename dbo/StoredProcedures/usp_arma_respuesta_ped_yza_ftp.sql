@@ -1,13 +1,35 @@
-CREATE PROCEDURE [dbo].[usp_arma_respuesta_ped_yza_ftp]
-@arch_cliente VARCHAR (30), @hash_md5 VARCHAR (50), @nombre VARCHAR (30), @longitud_registro INT
-WITH ENCRYPTION
-AS
-BEGIN
---El cuerpo del script estaba cifrado y no se puede reproducir aquí.
-    RETURN
-END
+﻿SET ANSI_NULLS, QUOTED_IDENTIFIER ON
+GO
 
+CREATE procedure [dbo].[usp_arma_respuesta_ped_yza_ftp] @arch_cliente varchar(30), @hash_md5 varchar(50), @nombre varchar(30), @longitud_registro int
+as
+select
+left(
+t1.cuenta_estilo_yza +
+t1.cod_barras + 
+case motivo 
+when '3' then right('000' + convert(varchar(5), isnull(t1.cantidad_surtida, 0)), 3) 
+when '4' then right('000' + convert(varchar(5), isnull(t1.cantidad_surtida, 0)), 3) 
+when '8' then right('000' + convert(varchar(5), isnull(t1.cantidad_surtida, 0)), 3) 
+else '000' end +
+t1.num_pedido +
+t1.filler1 +
+'00' +
+t1.codigo +
+t1.filler2 +
+t1.filler3 + 
+right('0000000000' + convert(varchar(10), precio) , 10) +
+right('00000' + convert(varchar(10), isnull(porcentaje_oferta, 0)) , 5) +
+convert(varchar(1), t1.cod_credito), @longitud_registro)
+from
+pedidos_ftp_yza t1
+where
+t1.arch_cliente = @arch_cliente and
+t1.hash_md5 = @hash_md5 and
+t1.nombre = @nombre
+order by
+t1.orden 
+asc
 
 
 GO
-
