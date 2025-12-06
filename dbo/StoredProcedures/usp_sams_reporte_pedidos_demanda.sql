@@ -1,5 +1,4 @@
-﻿USE monkeyland
-GO
+﻿
 SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 CREATE procedure [dbo].[usp_sams_reporte_pedidos_demanda]

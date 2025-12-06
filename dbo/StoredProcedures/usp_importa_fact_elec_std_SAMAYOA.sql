@@ -1,5 +1,4 @@
-﻿USE monkeyland
-GO
+﻿
 SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 CREATE procedure [dbo].[usp_importa_fact_elec_std_SAMAYOA]  

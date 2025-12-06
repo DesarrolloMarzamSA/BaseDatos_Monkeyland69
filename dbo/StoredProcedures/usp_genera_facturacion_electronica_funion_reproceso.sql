@@ -1,5 +1,4 @@
-﻿USE monkeyland
-GO
+﻿
 SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 CREATE PROCEDURE [dbo].[usp_genera_facturacion_electronica_funion_reproceso] (@fecha varchar(10))	--	@sucursal int, 

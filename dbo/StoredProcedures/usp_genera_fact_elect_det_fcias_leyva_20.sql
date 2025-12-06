@@ -1,5 +1,4 @@
-﻿USE monkeyland
-GO
+﻿
 SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 CREATE procedure [dbo].[usp_genera_fact_elect_det_fcias_leyva_20]-- 1,'FLE940304UC2','2013-02-12'

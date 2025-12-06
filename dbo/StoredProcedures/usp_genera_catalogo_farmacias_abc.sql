@@ -1,5 +1,4 @@
-﻿USE monkeyland
-GO
+﻿
 SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 --NOMBRE SP: 	usp_genera_catalogo_farmacias_ABC.      

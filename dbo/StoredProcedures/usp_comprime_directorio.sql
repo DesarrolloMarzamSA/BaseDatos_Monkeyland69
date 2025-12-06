@@ -1,5 +1,4 @@
-﻿USE monkeyland
-GO
+﻿
 SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 CREATE procedure [dbo].[usp_comprime_directorio] @directorio as varchar(500), @archivo_zip as varchar(500)

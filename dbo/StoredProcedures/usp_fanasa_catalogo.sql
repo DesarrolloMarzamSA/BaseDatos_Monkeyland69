@@ -1,5 +1,4 @@
-﻿USE monkeyland
-GO
+﻿
 SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 --select * from clientes_baan where ctepadre=496 --farmacia like'%NAC%' and sucursal=1 ORDER BY farmacia

@@ -1,5 +1,4 @@
-﻿USE monkeyland
-GO
+﻿
 SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 CREATE PROCEDURE [dbo].[usp_genera_catalogo_art_fcias_tijuana]-- 6,'C2','586'

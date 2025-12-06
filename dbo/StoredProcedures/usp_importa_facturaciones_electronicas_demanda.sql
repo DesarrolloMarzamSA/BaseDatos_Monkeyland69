@@ -1,5 +1,4 @@
-﻿USE monkeyland
-GO
+﻿
 SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 CREATE PROCEDURE [dbo].[usp_importa_facturaciones_electronicas_demanda]
