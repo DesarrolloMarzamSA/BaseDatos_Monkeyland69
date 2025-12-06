@@ -1,13 +1,26 @@
-CREATE PROCEDURE [dbo].[usp_lab_sanofi2_cat_almacenes]
-@fecha VARCHAR (10)
-WITH ENCRYPTION
-AS
-BEGIN
---El cuerpo del script estaba cifrado y no se puede reproducir aquí.
-    RETURN
-END
-
-
-
+﻿USE monkeyland
+GO
+SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 
+
+CREATE --	CREATE	--	DROP
+PROCEDURE [dbo].[usp_lab_sanofi2_cat_almacenes]
+@fecha VARCHAR(10)
+WITH ENCRYPTION
+AS
+
+/*
+EXECUTE usp_lab_sanofi2_cat_almacenes '2012-04-13'
+*/
+
+
+SELECT 
+	@fecha																			fecha		,
+	RIGHT('00'+CONVERT(VARCHAR,sucursal),  2)		sucusal	,
+	ibs_letra																		letra		,
+	descripcion																	nombre	,
+	IATA																				abrev		
+FROM sucursales WITH (NOLOCK) 
+WHERE fisica = 1
+GO
