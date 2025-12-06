@@ -10,7 +10,7 @@ PROCEDURE [dbo].[usp_fyza_20_pedidos_insert]
 @fecha_pedido					DATETIME				,
 @hash_md5							VARCHAR(100)--,
 
-WITH ENCRYPTION
+
 AS
 
 --	TRUNCATE TABLE pedidos_fyza_20

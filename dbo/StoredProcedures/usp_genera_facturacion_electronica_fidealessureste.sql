@@ -3,7 +3,7 @@ SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 
 CREATE PROCEDURE [dbo].[usp_genera_facturacion_electronica_fidealessureste] (@fecha varchar(10))	--	@sucursal int, 
-WITH ENCRYPTION
+
 AS
 --------------------------------------------------------------------------------------------------
 --	HECHO POR:	 MIGUEL SAMAYOA/ABRAHAM MARCELINO RAMRIEZ VEGA

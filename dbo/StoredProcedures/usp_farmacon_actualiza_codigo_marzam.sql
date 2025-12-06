@@ -8,7 +8,7 @@ GO
 -- Description:	<Description,,>
 -- =============================================
 CREATE PROCEDURE [dbo].[usp_farmacon_actualiza_codigo_marzam] 
-WITH ENCRYPTION
+
 AS
 BEGIN
 	-- SET NOCOUNT ON added to prevent extra result sets from

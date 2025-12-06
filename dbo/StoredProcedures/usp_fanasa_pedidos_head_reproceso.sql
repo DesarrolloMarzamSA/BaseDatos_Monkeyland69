@@ -2,7 +2,7 @@
 SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 CREATE procedure [dbo].[usp_fanasa_pedidos_head_reproceso]
-WITH ENCRYPTION
+
 as
 select distinct right(REPLICATE(' ',16) + CONVERT(varchar,rtrim(ped.pedido)),16) pedido, 
  right(REPLICATE(' ',7) + CONVERT(varchar,ped.cuenta),7)cuenta, 

@@ -6,7 +6,7 @@ CREATE procedure [dbo].[usp_fanasa_insert_facturas]
 @archivo_embarque as varchar(20),
 @fecha_creacion as datetime,
 @buffer varchar(max)
-WITH ENCRYPTION
+
 as
 declare
 

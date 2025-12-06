@@ -11,7 +11,7 @@ CREATE procedure [dbo].[usp_inserta_pedidos_farmapronto]
 	@enviado_ftp char(10),
 	@idproveedor char(10),
 	@fechadelpedido char(10)
-WITH ENCRYPTION
+
 AS	
 	DECLARE @sucursal tinyint
 

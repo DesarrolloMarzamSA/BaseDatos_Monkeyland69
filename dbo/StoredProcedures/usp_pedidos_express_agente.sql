@@ -2,7 +2,7 @@
 SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 CREATE procedure [dbo].[usp_pedidos_express_agente]
-WITH ENCRYPTION
+
 as
 set nocount on
 declare @sucursal tinyint

@@ -2,7 +2,7 @@
 SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 CREATE PROCEDURE [dbo].[usp_genera_facturacion_electronica_fenix_reducido] @fecha varchar(10)
-WITH ENCRYPTION
+
 as
 /*
 exec usp_genera_facturacion_electronica_fenix_reducido '2011-02-08'

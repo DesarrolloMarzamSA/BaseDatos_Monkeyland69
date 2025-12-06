@@ -10,7 +10,7 @@ execute usp_cfd_estandar_nc_retro  '2011-08-12', 'ROYRESORTS'
 */
 --declare
 @fecha VARCHAR(10), @IDCliente VARCHAR(10)
-WITH ENCRYPTION
+
 AS
 
 DECLARE @query VARCHAR(5000), @header VARCHAR(5000)

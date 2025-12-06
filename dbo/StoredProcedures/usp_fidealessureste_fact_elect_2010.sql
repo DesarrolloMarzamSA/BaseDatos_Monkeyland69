@@ -15,7 +15,7 @@ PROCEDURE [dbo].[usp_fidealessureste_fact_elect_2010]
 /*
 EXECUTE usp_fidealessureste_fact_elect_2010 '2011-02-02'
 */
-WITH ENCRYPTION
+
 AS
 
 

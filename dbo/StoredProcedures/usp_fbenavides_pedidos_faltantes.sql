@@ -4,7 +4,7 @@ GO
 CREATE
 --	CREATE
 	PROCEDURE [dbo].[usp_fbenavides_pedidos_faltantes]
-WITH ENCRYPTION
+
 AS
 
 BEGIN

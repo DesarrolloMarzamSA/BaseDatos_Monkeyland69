@@ -13,7 +13,7 @@ GO
 --modificacion:		25/mar/2010		GOBIERNO
 
 CREATE PROCEDURE [dbo].[usp_genera_catalogo_fsanchez] 
-WITH ENCRYPTION
+
 AS
 
 DECLARE @sucursal INT

@@ -24,7 +24,7 @@ PROCEDURE [dbo].[usp_lab_sanofi_farmalink_insert_order_line]
 	@l_total_amount			MONEY						, 				--		16
 	@hash_md5						VarChar	( 90)							--		17
 
-WITH ENCRYPTION
+
 AS
 
 DECLARE	@codigo	VarChar	( 90)

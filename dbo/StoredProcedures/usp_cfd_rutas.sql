@@ -4,7 +4,7 @@ GO
 
 CREATE
 PROCEDURE [dbo].[usp_cfd_rutas]
-WITH ENCRYPTION
+
 AS
 
 SELECT descripcion, ruta, recursivo  

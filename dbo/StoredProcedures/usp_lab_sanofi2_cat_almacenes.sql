@@ -6,7 +6,7 @@ GO
 CREATE --	CREATE	--	DROP
 PROCEDURE [dbo].[usp_lab_sanofi2_cat_almacenes]
 @fecha VARCHAR(10)
-WITH ENCRYPTION
+
 AS
 
 /*

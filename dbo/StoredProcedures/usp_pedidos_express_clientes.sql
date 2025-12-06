@@ -5,7 +5,7 @@ GO
 
 
 CREATE procedure [dbo].[usp_pedidos_express_clientes]
-WITH ENCRYPTION
+
 as
 set nocount on
 declare @sucursal tinyint

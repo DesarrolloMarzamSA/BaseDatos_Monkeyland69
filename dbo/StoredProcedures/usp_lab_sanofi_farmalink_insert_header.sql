@@ -21,7 +21,7 @@ PROCEDURE [dbo].[usp_lab_sanofi_farmalink_insert_header] (
 	@cliente									VARCHAR( 05), 
 	@recepcion								DATETIME
 )													
-WITH ENCRYPTION
+
 AS
 
 DECLARE @sucursal INT 

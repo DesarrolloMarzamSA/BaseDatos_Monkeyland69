@@ -2,7 +2,7 @@
 SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 CREATE procedure [dbo].[usp_catalogo_klyns_llenado]
-WITH ENCRYPTION
+
 as
 insert into catalogo_klyns (cod_barras, codigo, refklyns, xtimestamp)
 (

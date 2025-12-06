@@ -3,7 +3,7 @@ SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 
 CREATE procedure [dbo].[usp_genera_catalogo_san_jorge]
-WITH ENCRYPTION
+
 as
 select
 '            ' +

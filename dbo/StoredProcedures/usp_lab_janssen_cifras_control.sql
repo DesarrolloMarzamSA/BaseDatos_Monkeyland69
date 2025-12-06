@@ -4,7 +4,7 @@ GO
 
 CREATE	--	CREATE
 PROCEDURE [dbo].[usp_lab_janssen_cifras_control] @fecha VARCHAR(10)
-WITH ENCRYPTION
+
 AS
 
 /*

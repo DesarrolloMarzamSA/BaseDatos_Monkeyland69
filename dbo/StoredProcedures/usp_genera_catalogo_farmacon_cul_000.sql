@@ -4,7 +4,7 @@ GO
 
 CREATE PROCEDURE [dbo].[usp_genera_catalogo_farmacon_cul_000]
 	@sucursal TINYINT
-WITH ENCRYPTION
+
 AS
 
 --DECLARE @sucursal TINYINT

@@ -8,7 +8,7 @@ PROCEDURE [dbo].[usp_lab_sanofi_sales]
 /*
 usp_lab_sanofi_sales  5, '2011-02-11'
 */
-WITH ENCRYPTION
+
 AS
 
 --	DECLARE @fecha VARCHAR(10)

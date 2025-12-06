@@ -14,7 +14,7 @@ CREATE PROCEDURE [dbo].[usp_inserta_pedidos_premier]
 	@precio_farmacia_sin_iva money,
 	@importe_descuento_oferta_unitario money,
 	@importe_descuento_financiero_unitario money
-WITH ENCRYPTION
+
 AS	
 	--declare @sucursal tinyint
 	--declare @cliente varchar(5)

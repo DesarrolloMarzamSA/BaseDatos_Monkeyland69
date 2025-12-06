@@ -6,7 +6,7 @@ CREATE	--	CREATE	--	DROP
 PROCEDURE [dbo].[usp_lab_sanofi_poblar_fe]
 	--@sucursal INT,	
 	@fecha VARCHAR(10)
-WITH ENCRYPTION
+
 AS
 
 /*

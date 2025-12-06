@@ -4,7 +4,7 @@ GO
 
 
 CREATE procedure [dbo].[usp_importa_parametros_ofertas]
-WITH ENCRYPTION
+
 as
 set nocount on
 

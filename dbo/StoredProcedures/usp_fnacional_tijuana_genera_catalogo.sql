@@ -6,7 +6,7 @@ GO
 
 
 CREATE PROCEDURE [dbo].[usp_fnacional_tijuana_genera_catalogo] @sucursal int
-WITH ENCRYPTION
+
 as
 select
 left(convert(varchar(2), @sucursal) + '            ', 12) +

@@ -4,7 +4,7 @@ GO
 
 CREATE PROCEDURE [dbo].[usp_genera_catalogo_fcias_lux_cul]
 	@sucursal TINYINT
-WITH ENCRYPTION
+
 AS
 	
 --DECLARE @sucursal TINYINT

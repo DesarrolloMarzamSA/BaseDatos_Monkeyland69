@@ -11,7 +11,7 @@ GO
 CREATE procedure [dbo].[usp_farmacon_insert_cuenta]
 (@sucursal int,
 @cuenta varchar(5))
-WITH ENCRYPTION
+
 as
 
 insert into cat_farmacon values(@sucursal,@cuenta,GETDATE())

@@ -6,7 +6,7 @@ CREATE
 PROCEDURE [dbo].[usp_lab_sanofi_order_information]
 @almacen INT, @fecha VARCHAR(10)
 
-WITH ENCRYPTION
+
 AS
 
 /*

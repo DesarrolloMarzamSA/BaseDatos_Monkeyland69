@@ -4,7 +4,7 @@ GO
 CREATE procedure [dbo].[usp_importa_fact_elec_std_SAMAYOA]  
 @fecha varchar(10)
 
-WITH ENCRYPTION
+
 as
 set nocount on
 declare @sucursal tinyint 

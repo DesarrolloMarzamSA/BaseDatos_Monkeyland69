@@ -14,7 +14,7 @@ usp_fact_elect_cifras_control_fenix '2012-05-17'
 
 
 CREATE --	CREATE
-PROCEDURE [dbo].[usp_fact_elect_cifras_control_fenix] (@fecha VARCHAR(10)) WITH ENCRYPTION
+PROCEDURE [dbo].[usp_fact_elect_cifras_control_fenix] (@fecha VARCHAR(10)) 
 AS
 
 --	DECLARE @fecha VARCHAR(10) SET @fecha = '2011-03-17'

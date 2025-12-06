@@ -3,7 +3,7 @@ SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 CREATE	--	CREATE	--	DROP
 PROCEDURE [dbo].[usp_fyza_20_pedidos_upd_cod_ctas]
-WITH ENCRYPTION
+
 AS
 
 

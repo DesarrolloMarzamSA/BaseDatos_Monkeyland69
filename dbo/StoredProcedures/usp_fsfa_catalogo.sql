@@ -19,7 +19,7 @@ EXECUTE usp_fsfa_catalogo 3
   
 CREATE	--	CREATE  
 PROCEDURE [dbo].[usp_fsfa_catalogo] (@sucursal int)  
-WITH ENCRYPTION
+
 AS  
   
 DECLARE @sep varchar(1)  

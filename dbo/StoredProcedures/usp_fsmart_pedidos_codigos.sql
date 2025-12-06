@@ -4,7 +4,7 @@ GO
 CREATE	--	CREATE
 PROCEDURE [dbo].[usp_fsmart_pedidos_codigos]
 
-WITH ENCRYPTION
+
 AS
 
 UPDATE pedidos_fsmart  SET 

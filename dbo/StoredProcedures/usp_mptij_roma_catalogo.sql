@@ -8,7 +8,7 @@ GO
 
 --exec usp_mptij_roma_catalogo 6
 CREATE procedure [dbo].[usp_mptij_roma_catalogo] 
-WITH ENCRYPTION
+
 as
 declare @sucursal tinyint 
 select @sucursal = 6

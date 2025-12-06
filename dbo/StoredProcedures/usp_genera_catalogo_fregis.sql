@@ -4,7 +4,7 @@ GO
 
 CREATE --	CREATE
 PROCEDURE [dbo].[usp_genera_catalogo_fregis] --	@sucursal int, @cliente VARCHAR(5)
-WITH ENCRYPTION
+
 as
 
 /*

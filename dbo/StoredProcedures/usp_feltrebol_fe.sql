@@ -16,7 +16,7 @@ DECLARE @fecha VARCHAR(10)
 SET @fecha = '2011-08-07'
 */
 
-WITH ENCRYPTION
+
 AS
 
 

@@ -4,7 +4,7 @@ GO
 CREATE procedure [dbo].[usp_farmacon_reporte]   
  @fechaini datetime,  
  @fechafin datetime  
-WITH ENCRYPTION
+
 as  
   
 --declare @fechaini datetime  

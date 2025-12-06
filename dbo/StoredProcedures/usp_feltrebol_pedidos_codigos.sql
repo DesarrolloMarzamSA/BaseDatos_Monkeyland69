@@ -5,7 +5,7 @@ GO
 
 CREATE	--	CREATE
 PROCEDURE [dbo].[usp_feltrebol_pedidos_codigos]
-WITH ENCRYPTION
+
 AS
 
 

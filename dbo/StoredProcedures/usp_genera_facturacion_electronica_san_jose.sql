@@ -2,7 +2,7 @@
 SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 CREATE procedure [dbo].[usp_genera_facturacion_electronica_san_jose] 
-WITH ENCRYPTION
+
 as
 declare @sucursal int
 declare @segto varchar(2)

@@ -12,7 +12,7 @@ CREATE procedure [dbo].[usp_inserta_pedidos_leyva_20]
 	@enviado_ftp CHAR(10),
 	@otros VARCHAR(60)
 	
-WITH ENCRYPTION
+
 AS	
 	  
 	--DECLARE @sucursal TINYINT

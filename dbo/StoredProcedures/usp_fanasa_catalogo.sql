@@ -4,7 +4,7 @@ GO
 --select * from clientes_baan where ctepadre=496 --farmacia like'%NAC%' and sucursal=1 ORDER BY farmacia
 CREATE --create --drop
 procedure [dbo].[usp_fanasa_catalogo]
-WITH ENCRYPTION
+
 as 
 select 
 	'0001'																		AS	zona,

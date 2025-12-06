@@ -15,7 +15,7 @@ CREATE
 PROCEDURE [dbo].[usp_lab_sanofi_catalogo_clientes] 
 --	DECLARE
 @almacen INT, @fecha VARCHAR(10)
-WITH ENCRYPTION
+
 AS
 
 DECLARE @sep VARCHAR(1)

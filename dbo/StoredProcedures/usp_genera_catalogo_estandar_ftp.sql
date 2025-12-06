@@ -15,7 +15,7 @@ CREATE
 	procedure [dbo].[usp_genera_catalogo_estandar_ftp] 
 	@sucursal int, @minexist int, @cliente varchar(30)
  
-WITH ENCRYPTION
+
 as
 set nocount on
 /*declare @iva as money

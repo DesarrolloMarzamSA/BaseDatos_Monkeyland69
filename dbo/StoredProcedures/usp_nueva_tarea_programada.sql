@@ -8,7 +8,7 @@ CREATE PROCEDURE [dbo].[usp_nueva_tarea_programada]
 	@descripcion varchar(100),
 	@hora varchar(20),
 	@cliente varchar(20)
-WITH ENCRYPTION
+
 AS
 BEGIN
 	SET NOCOUNT ON;

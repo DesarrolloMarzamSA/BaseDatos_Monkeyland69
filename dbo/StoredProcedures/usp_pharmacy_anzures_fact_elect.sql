@@ -11,7 +11,7 @@ PROCEDURE [dbo].[usp_pharmacy_anzures_fact_elect]
 --	DECLARE 
 @sucursal INT, @fecha VARCHAR(10)
 
-WITH ENCRYPTION
+
 AS
 
 /*

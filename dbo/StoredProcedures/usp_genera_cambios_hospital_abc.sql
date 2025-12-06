@@ -3,7 +3,7 @@ SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 
 CREATE procedure [dbo].[usp_genera_cambios_hospital_abc]
-WITH ENCRYPTION
+
 as
 select '353' + '	' + t1.cod_barras + '	' + ' ' + '	' + 
 case t1.clas_fis 

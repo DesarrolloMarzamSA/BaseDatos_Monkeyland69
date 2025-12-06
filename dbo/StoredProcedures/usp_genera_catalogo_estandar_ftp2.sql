@@ -6,7 +6,7 @@ GO
 --exec usp_genera_catalogo_estandar_ftp2 6, 10, 'FBGUADALUPANA'
 CREATE procedure [dbo].[usp_genera_catalogo_estandar_ftp2] @sucursal int, @minexist int, @cliente varchar(30)
  
-WITH ENCRYPTION
+
 as
 
 declare @iva as money

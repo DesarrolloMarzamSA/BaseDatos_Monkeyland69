@@ -2,7 +2,7 @@
 SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 CREATE	--	CREATE
-PROCEDURE [dbo].[usp_fbenavides_pedidos_upd_cod]	WITH ENCRYPTION
+PROCEDURE [dbo].[usp_fbenavides_pedidos_upd_cod]	
 AS
 
 

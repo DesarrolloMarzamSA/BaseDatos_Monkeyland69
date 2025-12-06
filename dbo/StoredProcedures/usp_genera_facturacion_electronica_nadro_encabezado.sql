@@ -8,7 +8,7 @@ CREATE PROCEDURE [dbo].[usp_genera_facturacion_electronica_nadro_encabezado]
 	@ctepadre VARCHAR(10),
 	@cliente VARCHAR(5),
 	@folio_fiscal VARCHAR(10)
-WITH ENCRYPTION
+
 AS
 	DECLARE @BrutoIEPS VARCHAR(12)
 --DECLARE @folio_fiscal VARCHAR(10)	

@@ -3,7 +3,7 @@ SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 
 CREATE procedure [dbo].[usp_cxcice_documentos]
-WITH ENCRYPTION
+
 as
 SELECT columnota FROM OPENQUERY(AS400,
 '

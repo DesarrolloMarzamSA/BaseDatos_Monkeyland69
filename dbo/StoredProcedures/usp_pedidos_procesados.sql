@@ -4,7 +4,7 @@ GO
 
 CREATE--CREATE--DROP
 PROCEDURE [dbo].[usp_pedidos_procesados]
-WITH ENCRYPTION
+
 AS
 
 

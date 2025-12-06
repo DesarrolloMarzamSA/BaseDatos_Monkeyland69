@@ -3,7 +3,7 @@ SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 CREATE procedure [dbo].[usp_fanasa_pedidos_faltantes]
 @ahh as varchar(15)
-WITH ENCRYPTION
+
 as
 
 select 	

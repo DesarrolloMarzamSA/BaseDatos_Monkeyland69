@@ -5,7 +5,7 @@ CREATE
 --	CREATE
 PROCEDURE [dbo].[usp_fbenavides_catalogo]
 --	@sucursal INT
-WITH ENCRYPTION
+
 AS
 
 

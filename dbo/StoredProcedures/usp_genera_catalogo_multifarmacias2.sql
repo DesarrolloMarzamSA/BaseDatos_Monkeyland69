@@ -7,7 +7,7 @@ GO
 -- Description:	catalogo Multifarmacias
 -- =============================================
 CREATE PROCEDURE [dbo].[usp_genera_catalogo_multifarmacias] 
-WITH ENCRYPTION
+
 as
 BEGIN
 	-- SET NOCOUNT ON added to prevent extra result sets from

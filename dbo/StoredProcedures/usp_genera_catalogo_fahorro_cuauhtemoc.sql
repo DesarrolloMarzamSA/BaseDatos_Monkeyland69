@@ -11,7 +11,7 @@ CREATE PROCEDURE [dbo].[usp_genera_catalogo_fahorro_cuauhtemoc]
 --HECH POR: 	MIGUEL SAMAYOA.
 --creacion: 			07/09/2009
 --modificacion:		25/03/2010
-WITH ENCRYPTION
+
 AS
 
 declare @factor int

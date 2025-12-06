@@ -33,7 +33,7 @@ CREATE procedure [dbo].[usp_inserta_pedidos_klyns]
 	@dpreciounitsiva money,
 	@dimportesiva money,
 	@dimporteciva money
-WITH ENCRYPTION
+
 as	
     declare @x_Sucursal tinyint
 	declare @x_Cliente varchar(5)  

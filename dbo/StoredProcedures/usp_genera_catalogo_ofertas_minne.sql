@@ -2,7 +2,7 @@
 SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 CREATE PROCEDURE [dbo].[usp_genera_catalogo_ofertas_minne]
-WITH ENCRYPTION
+
 AS
 
 

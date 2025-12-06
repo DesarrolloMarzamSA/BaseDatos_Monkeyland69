@@ -13,7 +13,7 @@ PROCEDURE [dbo].[usp_fardemex_pedidos_insert]
 	@hash_md5							VARCHAR(100),	--	 7
 	@linea								INT					,	--	 8
 	@prec_farm						MONEY					--	 9
-WITH ENCRYPTION
+
 AS
 
 DECLARE 

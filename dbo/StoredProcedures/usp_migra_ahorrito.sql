@@ -4,7 +4,7 @@ GO
 
 
 CREATE procedure [dbo].[usp_migra_ahorrito]
-WITH ENCRYPTION
+
 as
 declare @ped_id int  
 declare @sucursal int  

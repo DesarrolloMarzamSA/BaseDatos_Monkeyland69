@@ -7,7 +7,7 @@ exec usp_fenix_fe_cxp_emergencia '2012-06-07'
 CREATE --CREATE	--	DROP
 PROCEDURE [dbo].[usp_fenix_fe_cxp_emergencia] 
 @fecha VARCHAR(10)	--	fecha de solicitud
-WITH ENCRYPTION
+
 AS
 
 

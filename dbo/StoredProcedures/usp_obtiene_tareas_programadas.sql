@@ -3,7 +3,7 @@ SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 CREATE PROCEDURE [dbo].[usp_obtiene_tareas_programadas]
 	@partime varchar(4) 
-WITH ENCRYPTION
+
 as
 	declare @dw tinyint
 	declare @mm tinyint

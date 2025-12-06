@@ -2,7 +2,7 @@
 SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 CREATE PROCEDURE [dbo].[usp_genera_facturacion_electronica_fsanchez] (@fecha varchar(10))
-WITH ENCRYPTION
+
 as
 begin
 SET NOCOUNT OFF

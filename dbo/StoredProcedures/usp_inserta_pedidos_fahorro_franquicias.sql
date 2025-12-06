@@ -9,7 +9,7 @@ CREATE PROCEDURE [dbo].[usp_inserta_pedidos_fahorro_franquicias]
 	@arch_cliente varchar(50),
 	@orden char(10),
 	@hash_md5 varchar(50)
-WITH ENCRYPTION
+
 AS
 	declare @sucursal tinyint	
 	

@@ -12,7 +12,7 @@ PROCEDURE [dbo].[usp_fanasa_pedidos_insert]
 @sucursal							INT					,
 @pedido							VARCHAR(15)	,
 @now					datetime
-WITH ENCRYPTION
+
 AS
 
 --	TRUNCATE TABLE pedidos_chedraui_v3

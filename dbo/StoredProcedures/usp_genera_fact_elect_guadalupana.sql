@@ -7,7 +7,7 @@ GO
 -- Description:	facturacion electronica layout PharmacySoft2_0
 -- =============================================
 CREATE PROCEDURE [dbo].[usp_genera_fact_elect_guadalupana] @fecha varchar(10),@ctepadre varchar(10)
-WITH ENCRYPTION
+
 AS
 BEGIN
 	-- usp_genera_fact_elect_guadalupana  '2013-10-09','486'

@@ -12,7 +12,7 @@ CREATE PROCEDURE [dbo].[usp_genera_catalogo_fenix] @sucursal int, @cliente VARCH
 exec usp_genera_catalogo_fenix 4, '00879'
 */
 
-WITH ENCRYPTION
+
 AS
 DECLARE @descuento MONEY
 SELECT @descuento = CONVERT(MONEY, descuento) FROM clientes_baan WHERE sucursal = @sucursal and cliente = @cliente

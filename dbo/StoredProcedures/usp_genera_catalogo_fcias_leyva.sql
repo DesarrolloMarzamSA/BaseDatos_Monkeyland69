@@ -4,7 +4,7 @@ GO
 
 CREATE PROCEDURE [dbo].[usp_genera_catalogo_fcias_leyva]
 	@sucursal TINYINT
-WITH ENCRYPTION
+
 AS
 /*	
 	DECLARE @descuento varchar(6)

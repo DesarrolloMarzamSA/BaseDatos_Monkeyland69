@@ -9,7 +9,7 @@ PROCEDURE [dbo].[usp_fenix_cat_backoffice]
 usp_fenix_cat_backoffice
 */
 
-WITH ENCRYPTION
+
 AS
 
 DECLARE 

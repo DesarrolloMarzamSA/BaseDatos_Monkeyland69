@@ -4,7 +4,7 @@ GO
 
 CREATE	--	CREATE
 PROCEDURE [dbo].[usp_fsfa_pedidos_codigos]
-WITH ENCRYPTION
+
 AS
 
 

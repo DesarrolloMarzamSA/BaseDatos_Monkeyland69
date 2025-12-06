@@ -5,7 +5,7 @@ GO
 CREATE
 --	CREATE
 PROCEDURE [dbo].[usp_lab_az_cat_clientes]
-WITH ENCRYPTION
+
 AS
 
 

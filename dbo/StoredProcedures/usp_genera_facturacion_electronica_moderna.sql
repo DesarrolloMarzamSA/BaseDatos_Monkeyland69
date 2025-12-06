@@ -5,7 +5,7 @@ GO
 --usp_genera_facturacion_electronica_moderna 
 
 CREATE procedure [dbo].[usp_genera_facturacion_electronica_moderna] @fecha varchar(10)
-WITH ENCRYPTION
+
 as
 --PROCEDIMIENTO PARA FACTURACIÓN ELECTRÓNICA FCIAS. MODERNA DE CULIACÁN
 declare @sucursal int, @segto varchar(2), @ctepadre varchar(3)

@@ -4,7 +4,7 @@ GO
 
 CREATE	--	CREATE	--	DROP
 PROCEDURE [dbo].[usp_chedraui_pedidos_faltantes]
-WITH ENCRYPTION
+
 AS
 
 /*

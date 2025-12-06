@@ -11,7 +11,7 @@ execute usp_cfd_estandar_retro  '2011-07-04', 'WALMART'
 */
 --declare
 @fecha VARCHAR(10), @IDCliente VARCHAR(10)
-WITH ENCRYPTION
+
 AS
 
 DECLARE @query VARCHAR(5000), @header VARCHAR(5000)

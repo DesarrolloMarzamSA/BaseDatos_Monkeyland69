@@ -2,7 +2,7 @@
 SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 CREATE procedure [dbo].[usp_migra_devoluciones_spt_fahorro] 
-WITH ENCRYPTION
+
 as
 insert into historica.dbo.devoluciones_spt_fahorro
 select t1.DEVFA_SUCURSAL,

@@ -6,7 +6,7 @@ CREATE procedure [dbo].[usp_genera_fact_elect_det_fcias_rivera]
 	@ctepadre varchar(3),
 	@factura varchar(8),
 	@fecha datetime
-WITH ENCRYPTION
+
 as
 --declare @segto varchar(2)
 --declare @ctepadre varchar(3)

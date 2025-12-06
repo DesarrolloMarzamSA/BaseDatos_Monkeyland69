@@ -3,7 +3,7 @@ SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 CREATE --	CREATE	--	DROP
 PROCEDURE [dbo].[usp_lab_sanofi2_movimientos_inventarios] (@fecha VARCHAR(10))
-WITH ENCRYPTION
+
 AS 
 
 /*

@@ -5,7 +5,7 @@ GO
 
 CREATE   procedure [dbo].[usp_espacio_usado] 
 @SourceDB	varchar(128)
-WITH ENCRYPTION
+
 as
 /*
 exec s_SpaceUsed 'mydb'

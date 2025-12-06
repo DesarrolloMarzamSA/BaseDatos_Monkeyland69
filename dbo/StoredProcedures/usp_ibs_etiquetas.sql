@@ -2,7 +2,7 @@
 SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 CREATE procedure [dbo].[usp_ibs_etiquetas] @nombre varchar(25) 
-WITH ENCRYPTION
+
 as
 --exec [usp_ibs_etiquetas] 'rosales'
 --drop table parametros_etiquetas_estandar

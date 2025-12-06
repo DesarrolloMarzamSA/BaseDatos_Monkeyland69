@@ -6,7 +6,7 @@ exec usp_fenix_fe_cxp '2011-12-15'
 */
 CREATE --CREATE	--	DROP
 PROCEDURE [dbo].[usp_fenix_fe_cxp] @fecha VARCHAR(10)
-WITH ENCRYPTION
+
 AS
 
 

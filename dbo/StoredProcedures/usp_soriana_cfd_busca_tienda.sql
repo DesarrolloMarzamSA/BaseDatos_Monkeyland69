@@ -7,7 +7,7 @@ CREATE	--	CREATE
 PROCEDURE [dbo].[usp_soriana_cfd_busca_tienda]
 @sucursal INT, @cliente VARCHAR(5)
 
-WITH ENCRYPTION
+
 AS
 /*
 EXECUTE usp_soriana_cfd_busca_tienda 5, '05321'

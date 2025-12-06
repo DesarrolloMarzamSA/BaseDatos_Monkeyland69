@@ -5,7 +5,7 @@ GO
 CREATE	--	CREATE	--	DROP
 PROCEDURE [dbo].[usp_monitor_pedidos_resultados]
 @filtro VARCHAR(50)
-WITH ENCRYPTION
+
 AS
 
 /*

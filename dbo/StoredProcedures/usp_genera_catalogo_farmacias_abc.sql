@@ -10,7 +10,7 @@ GO
 --FECHA ultima modificacion:  30/dic/2009 IVA Sucursales 2010
 
 CREATE PROCEDURE [dbo].[usp_genera_catalogo_farmacias_abc] 
-WITH ENCRYPTION
+
 AS
 
 DECLARE @sucursal INT

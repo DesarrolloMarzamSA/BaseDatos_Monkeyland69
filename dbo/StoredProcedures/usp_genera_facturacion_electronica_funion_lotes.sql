@@ -7,7 +7,7 @@ GO
 -- Description:	<Description,,>
 -- =============================================
 CREATE PROCEDURE [dbo].[usp_genera_facturacion_electronica_funion_lotes]
-WITH ENCRYPTION
+
 AS
 BEGIN
 	-- SET NOCOUNT ON added to prevent extra result sets from

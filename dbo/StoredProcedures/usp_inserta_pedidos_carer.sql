@@ -9,7 +9,7 @@ CREATE procedure [dbo].[usp_inserta_pedidos_carer]
 	@hash_md5 varchar(50),
 	@enviado_ftp char(10),
 	@codigo varchar(7)
-WITH ENCRYPTION
+
 AS	
 	DECLARE @sucursal tinyint
 

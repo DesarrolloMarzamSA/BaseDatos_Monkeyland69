@@ -3,7 +3,7 @@ SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 CREATE procedure [dbo].[usp_farmacon_pedidos_respuesta_inventario_farmacon_reproceso]
 	@x_ArchivoHH varchar(50)
-WITH ENCRYPTION
+
 as
 update	pedidos_farmacon_historia
 set		cantidad_surtida = t1.cantidad_pedida,

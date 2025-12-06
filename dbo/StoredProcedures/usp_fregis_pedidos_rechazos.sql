@@ -4,7 +4,7 @@ GO
 
 CREATE	--	CREATE	--	DROP
 PROCEDURE [dbo].[usp_fregis_pedidos_rechazos]
-WITH ENCRYPTION
+
 AS
 
 SELECT  

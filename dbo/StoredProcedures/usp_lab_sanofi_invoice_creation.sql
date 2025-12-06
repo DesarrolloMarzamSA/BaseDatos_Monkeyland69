@@ -12,7 +12,7 @@ CREATE
 PROCEDURE [dbo].[usp_lab_sanofi_invoice_creation]	
 --	DECLARE
 @almacen INT, @fecha VARCHAR(10)
-WITH ENCRYPTION
+
 AS
 
 --	SET @fecha = '2010-01-06'

@@ -3,7 +3,7 @@ SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 
 CREATE procedure [dbo].[usp_muestra_fragmentacion] @tabla as varchar(50)
-WITH ENCRYPTION
+
 as
  
 DECLARE @TableName sysname

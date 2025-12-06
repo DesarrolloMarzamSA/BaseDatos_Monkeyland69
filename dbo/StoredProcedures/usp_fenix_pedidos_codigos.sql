@@ -5,7 +5,7 @@ GO
 CREATE	--	CREATE	--	DROP
 PROCEDURE [dbo].[usp_fenix_pedidos_codigos]
 
-WITH ENCRYPTION
+
 AS
 
 /*

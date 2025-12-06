@@ -13,7 +13,7 @@ CREATE
 	--	CREATE
 PROCEDURE [dbo].[usp_fbenavides_fe_cf] 
 (@fecha varchar(10)) 
-WITH ENCRYPTION
+
 as
 
 --  declare @fecha varchar(10)

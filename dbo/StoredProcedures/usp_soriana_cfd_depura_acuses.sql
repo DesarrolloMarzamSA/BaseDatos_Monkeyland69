@@ -4,7 +4,7 @@ GO
 
 CREATE	--	CREATE
 PROCEDURE [dbo].[usp_soriana_cfd_depura_acuses]
-WITH ENCRYPTION
+
 AS
 
 --	query para obtener todas las confirmadas

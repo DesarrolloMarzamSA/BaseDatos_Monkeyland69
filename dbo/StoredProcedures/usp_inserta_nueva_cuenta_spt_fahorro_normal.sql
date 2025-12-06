@@ -6,7 +6,7 @@ CREATE procedure [dbo].[usp_inserta_nueva_cuenta_spt_fahorro_normal]
 	@cuenta_remision varchar(5), 
 	@sucursal_factura varchar(100), 
 	@cuenta_factura varchar(5)
-WITH ENCRYPTION
+
 as
 --declare @cuenta_estilo_ahorro varchar(9)
 --declare @sucursal_remision varchar(100)

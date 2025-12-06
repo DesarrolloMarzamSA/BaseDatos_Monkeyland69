@@ -2,7 +2,7 @@
 SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 CREATE procedure [dbo].[usp_reindexa_todas_las_tablas]
-WITH ENCRYPTION
+
 as
 declare @tabla varchar(255)
 declare cursor_tablas cursor fast_forward for select name from sysobjects where xtype = 'U'

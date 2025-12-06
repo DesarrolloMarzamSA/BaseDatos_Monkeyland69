@@ -7,7 +7,7 @@ GO
 --  usp_genera_respuesta_pedidos_ftorres 'pedidos_ftorres'
 
 CREATE PROCEDURE [dbo].[usp_genera_respuesta_pedidos_ftorres] @tabla varchar(100)
-WITH ENCRYPTION
+
 AS
 
 --	declare @tabla varchar(100)

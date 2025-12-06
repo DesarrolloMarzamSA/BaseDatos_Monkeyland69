@@ -3,7 +3,7 @@ SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 
 CREATE       procedure [dbo].[usp_genera_catalogo_fahorro_spt] @sucursal int, @cliente varchar(5)
-WITH ENCRYPTION
+
 as
 BEGIN
 	-- SET NOCOUNT ON added to prevent extra result sets from

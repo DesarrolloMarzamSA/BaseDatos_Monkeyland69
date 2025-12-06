@@ -5,7 +5,7 @@ GO
 CREATE	--	CREATE
 PROCEDURE [dbo].[usp_cfd_estandar_periodo]
   @fecha0 VARCHAR(10), @fecha1 VARCHAR(10), @idCliente VARCHAR(10)
-WITH ENCRYPTION
+
 AS
 
 DECLARE @fecha VARCHAR(10)

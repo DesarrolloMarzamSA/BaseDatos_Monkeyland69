@@ -13,7 +13,7 @@ CREATE PROCEDURE [dbo].[usp_inserta_pedidos_esquivar]
 	@porcentaje MONEY,
 	@descto_prod MONEY,
 	@prec_farm MONEY
-WITH ENCRYPTION
+
 AS	
 	DECLARE @sucursal TINYINT
 

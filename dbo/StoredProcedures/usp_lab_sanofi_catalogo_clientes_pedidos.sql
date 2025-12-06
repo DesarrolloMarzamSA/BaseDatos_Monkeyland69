@@ -16,7 +16,7 @@ PROCEDURE [dbo].[usp_lab_sanofi_catalogo_clientes_pedidos]
 --	DECLARE
 --@almacen INT, 
 @fecha VARCHAR(10)
-WITH ENCRYPTION
+
 AS
 
 /*

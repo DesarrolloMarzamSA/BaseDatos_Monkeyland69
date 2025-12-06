@@ -5,7 +5,7 @@ CREATE PROCEDURE [dbo].[usp_genera_catalogo_art_fcias_tijuana]-- 6,'C2','586'
 	@sucursal TINYINT,
 	@segto VARCHAR(5),
 	@ctepadre VARCHAR(5)
-WITH ENCRYPTION
+
 AS 
 DECLARE @clavemayoristamarzam VARCHAR(10)
 DECLARE @clavemayoristamedipac VARCHAR(10)

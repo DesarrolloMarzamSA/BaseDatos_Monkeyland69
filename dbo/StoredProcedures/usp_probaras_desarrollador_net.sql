@@ -7,7 +7,7 @@ PROCEDURE [dbo].[usp_probaras_desarrollador_net] (@fecha VARCHAR(10))
 
 --@sucursal INT, 
 
-WITH ENCRYPTION
+
 as	
 
 /*

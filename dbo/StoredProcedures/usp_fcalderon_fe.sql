@@ -5,7 +5,7 @@ GO
 
 
 CREATE	--	CREATE
-PROCEDURE [dbo].[usp_fcalderon_fe] @fecha VARCHAR(10)	WITH ENCRYPTION
+PROCEDURE [dbo].[usp_fcalderon_fe] @fecha VARCHAR(10)	
 AS
 
 /*

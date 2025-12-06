@@ -16,7 +16,7 @@ CREATE   procedure [dbo].[usp_ftp_PutFile]
 @SourceFile	varchar(128) ,
 
 @workdir	varchar(128)
-WITH ENCRYPTION
+
 as
 /*
 exec s_ftp_PutFile 	

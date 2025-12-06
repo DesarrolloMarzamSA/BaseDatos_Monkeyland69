@@ -27,7 +27,7 @@ inner join pedidos_servidor_ftp p on p.sucursal = cb.sucursal and p.cuenta = cb.
 CREATE	--	CREATE	--	DROP
 PROCEDURE [dbo].[usp_monitor_pedidos]	
 --@inicio VARCHAR, @fin VARCHAR(
-WITH ENCRYPTION
+
 AS
 
 

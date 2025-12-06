@@ -5,7 +5,7 @@ GO
 --usp_genera_facturacion_electronica_bazar 'matutino'
 
 CREATE procedure [dbo].[usp_genera_facturacion_electronica_bazar] @horario varchar(25)
-WITH ENCRYPTION
+
 as
 
 declare @fecha_facturacion datetime

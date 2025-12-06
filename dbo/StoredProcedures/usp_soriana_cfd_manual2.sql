@@ -6,7 +6,7 @@ CREATE
 PROCEDURE [dbo].[usp_soriana_cfd_manual2]
 --	[usp_soriana_cfd_manual] '2013-01-25','2013-01-25','FM','' 
 --@fecha VARCHAR(10),@fechaFin VARCHAR(10),@serie varchar(2)='',@mensaje varchar(100)='' 
-WITH ENCRYPTION
+
 AS
 
 SELECT distinct

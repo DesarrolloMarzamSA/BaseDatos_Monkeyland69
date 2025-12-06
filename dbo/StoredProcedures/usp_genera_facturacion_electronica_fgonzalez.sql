@@ -2,7 +2,7 @@
 SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 CREATE PROCEDURE  [dbo].[usp_genera_facturacion_electronica_fgonzalez] (@FECHA VARCHAR(10)) 
-WITH ENCRYPTION
+
 AS
 
 --	MIGUEL SAMAYOA

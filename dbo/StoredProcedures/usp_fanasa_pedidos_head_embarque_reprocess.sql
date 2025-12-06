@@ -4,7 +4,7 @@ GO
 
 CREATE procedure [dbo].[usp_fanasa_pedidos_head_embarque_reprocess]
 (@fecha as varchar(10))
-WITH ENCRYPTION
+
 as
 select distinct right(REPLICATE(' ',16) + CONVERT(varchar,rtrim(pedido)),16) pedido, 
  right(REPLICATE(' ',7) + CONVERT(varchar,ped.letra + cuenta),7)cuenta, 

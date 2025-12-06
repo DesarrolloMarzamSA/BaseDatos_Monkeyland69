@@ -3,7 +3,7 @@ SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 
 CREATE procedure [dbo].[usp_pedidos_express_clientes_ofertas]
-WITH ENCRYPTION
+
 as
 set nocount on
 create table #clientes_ofertas(

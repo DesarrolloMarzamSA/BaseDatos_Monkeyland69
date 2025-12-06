@@ -5,7 +5,7 @@ GO
 CREATE	--	CREATE	--	DROP
 PROCEDURE [dbo].[usp_fmorelost_pedidos_faltantes]
 
-WITH ENCRYPTION
+
 AS
 
 

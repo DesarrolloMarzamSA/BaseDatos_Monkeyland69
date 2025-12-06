@@ -13,7 +13,7 @@ GO
 --2010-03-26	FUNCION GOBIERNO									MIGUEL SAMAYOA
 
 CREATE  PROCEDURE [dbo].[usp_genera_catalogo_san_fco_asis] (@sucursal int)
-WITH ENCRYPTION
+
 AS
 
 DECLARE @sep varchar(1)

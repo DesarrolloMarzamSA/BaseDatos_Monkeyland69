@@ -5,7 +5,7 @@ CREATE procedure [dbo].[usp_genera_fact_elect_det_fcias_pharmacy_express]
 	@sucursal tinyint,
 	@cliente varchar(5),
 	@fecha datetime
-WITH ENCRYPTION
+
 as
 
 --declare @sucursal tinyint

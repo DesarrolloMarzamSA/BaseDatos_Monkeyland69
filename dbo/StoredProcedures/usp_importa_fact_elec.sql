@@ -3,7 +3,7 @@ SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 
 CREATE procedure [dbo].[usp_importa_fact_elec](@arch_encabezado varchar(100), @sucursal as tinyint )
-WITH ENCRYPTION
+
 as
 set nocount on 
 declare @objFSys int 

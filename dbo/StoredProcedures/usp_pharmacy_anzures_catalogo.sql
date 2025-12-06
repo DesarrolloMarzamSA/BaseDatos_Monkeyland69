@@ -14,7 +14,7 @@ PROCEDURE [dbo].[usp_pharmacy_anzures_catalogo]
 --DECLARE
 @sucursal INT, @cliente VARCHAR(5)
 
-WITH ENCRYPTION
+
 AS
 --	SET @sucursal = 1
 --	SET @cliente = '43372'

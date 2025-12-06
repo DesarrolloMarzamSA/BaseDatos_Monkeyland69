@@ -14,7 +14,7 @@ CREATE procedure [dbo].[usp_inserta_pedidos_yza_pharmacy]
 	@precio_farmacia_sin_iva varchar(10),
 	@importe_descuento_oferta_unitario varchar(10),
 	@importe_descuento_financiero_unitario varchar(10)
-WITH ENCRYPTION
+
 as	
     declare @x_Sucursal tinyint
 	declare @x_Cliente varchar(5)  

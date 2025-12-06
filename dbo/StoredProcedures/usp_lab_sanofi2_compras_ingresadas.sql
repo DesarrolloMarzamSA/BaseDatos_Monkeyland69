@@ -4,7 +4,7 @@ GO
 
 CREATE --	CREATE	--	DROP
 PROCEDURE [dbo].[usp_lab_sanofi2_compras_ingresadas]
-WITH ENCRYPTION
+
 AS
 /*
 DECLARE @miquery as varchar(8000)

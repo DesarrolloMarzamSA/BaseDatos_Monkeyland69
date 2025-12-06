@@ -8,7 +8,7 @@ GO
 --usp_genera_facturacion_electronica_soriana '2009-05-08'
 
 CREATE           procedure [dbo].[usp_genera_facturacion_electronica_soriana] (@fecha varchar(10))
-WITH ENCRYPTION
+
 as
 begin
 SET NOCOUNT OFF

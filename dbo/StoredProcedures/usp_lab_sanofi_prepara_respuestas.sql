@@ -6,7 +6,7 @@ GO
 CREATE 
 --CREATE 
 PROCEDURE [dbo].[usp_lab_sanofi_prepara_respuestas]
-WITH ENCRYPTION
+
 AS
 
 /*

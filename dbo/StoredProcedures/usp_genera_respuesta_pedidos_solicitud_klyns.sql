@@ -5,7 +5,7 @@ CREATE procedure [dbo].[usp_genera_respuesta_pedidos_solicitud_klyns]
 	@hash_md5 varchar(50),
 	@arch_cliente varchar(50),  
 	@cliente varchar(5)
-WITH ENCRYPTION
+
 as
 
 --declare @hash_md5 varchar(50)

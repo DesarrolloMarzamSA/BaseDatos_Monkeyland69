@@ -3,7 +3,7 @@ SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 
 CREATE    procedure [dbo].[usp_genera_catalogo_farmacos_csv] @sucursal int, @minexist int
-WITH ENCRYPTION
+
 as
 set nocount on
 --PROCEDIMIENTO PARA  CATALOGO ESTÁNDAR CLIENTES SERVIDOR FTP

@@ -21,7 +21,7 @@ PROCEDURE [dbo].[usp_lab_sanofi_farmalink_insert_address]
 	@Cliente					VarChar(006),
 	@recepcion				DateTime
 
-WITH ENCRYPTION
+
 AS
 
 /*

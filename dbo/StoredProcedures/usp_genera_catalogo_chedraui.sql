@@ -9,7 +9,7 @@ GO
 
 
 CREATE     procedure [dbo].[usp_genera_catalogo_chedraui]
-WITH ENCRYPTION
+
 as
 
 

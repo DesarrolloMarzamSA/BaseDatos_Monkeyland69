@@ -4,7 +4,7 @@ GO
 CREATE PROCEDURE [dbo].[usp_genera_catalogo_fcias_farmapronto]
 @sucursal INT, 
 @minexist INT
-WITH ENCRYPTION
+
 AS
 --exec usp_genera_catalogo_fcias_farmapronto 1, 1
 --DECLARE @sucursal INT

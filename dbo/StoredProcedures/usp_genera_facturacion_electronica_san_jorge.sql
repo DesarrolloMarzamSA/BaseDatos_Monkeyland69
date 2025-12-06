@@ -4,7 +4,7 @@ GO
 
 
 CREATE procedure [dbo].[usp_genera_facturacion_electronica_san_jorge]
-WITH ENCRYPTION
+
 as
 --PROCEDIMIENTO PARA FACTURACIÓN ELECTRÓNICA FCIAS. MODERNA DE GDL
 select

@@ -5,7 +5,7 @@ GO
 CREATE --	CREATE
 PROCEDURE --usp_fregis_ofertas
 [dbo].[usp_genera_ofertas_fregis]
-WITH ENCRYPTION
+
 AS
 
 --DELETE FROM bolsas_ofertas WHERE cadena = 'FREGIS'

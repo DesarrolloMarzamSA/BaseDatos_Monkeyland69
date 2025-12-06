@@ -8,7 +8,7 @@ CREATE PROCEDURE [dbo].[usp_genera_facturacion_electronica_fcias_carer_encabezad
 	@ctepadre varchar(10),
 	@cliente varchar(5),
 	@folio_fiscal varchar(10)
-WITH ENCRYPTION
+
 as
 	declare @brutoieps varchar(12)
 	declare @total_renglones char(3)

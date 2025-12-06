@@ -5,7 +5,7 @@ GO
 CREATE 
 --	CREATE
 PROCEDURE [dbo].[usp_lab_sanofi_respalda_pedidos_historia]
-WITH ENCRYPTION
+
 AS
 
 /*

@@ -4,7 +4,7 @@ GO
 
 
 CREATE  procedure [dbo].[usp_genera_catalogo_sufacen] 
-WITH ENCRYPTION
+
 as
 
 declare @descuento varchar(6)

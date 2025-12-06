@@ -2,7 +2,7 @@
 SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 CREATE procedure [dbo].[usp_mty_catcalderon]
-WITH ENCRYPTION
+
 as
 set nocount on
 create table #resultados(orden int identity(1,1), texto varchar(250))

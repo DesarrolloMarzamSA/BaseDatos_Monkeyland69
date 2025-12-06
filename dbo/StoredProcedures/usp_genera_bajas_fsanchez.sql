@@ -5,7 +5,7 @@ CREATE procedure [dbo].[usp_genera_bajas_fsanchez] ( @dias int)
 
 --	usp_genera_bajas_fsanchez 5
 
-WITH ENCRYPTION
+
 as
 begin 
   SELECT   

@@ -3,7 +3,7 @@ SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 
 CREATE PROCEDURE [dbo].[usp_facturacion_electronica_chedraui] @segto varchar(2), @ctepadre varchar(3), @fecha char(10)
-WITH ENCRYPTION
+
 as
 declare @fecha_tandem smalldatetime
 select @fecha_tandem = convert(datetime, @fecha, 121)

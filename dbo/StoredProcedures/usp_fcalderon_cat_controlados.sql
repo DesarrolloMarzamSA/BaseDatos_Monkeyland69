@@ -4,7 +4,7 @@ GO
 
 
 CREATE	--	CREATE
-PROCEDURE [dbo].[usp_fcalderon_cat_controlados]	WITH ENCRYPTION
+PROCEDURE [dbo].[usp_fcalderon_cat_controlados]	
 AS
 
 --	HECHO	POR:		MIGUEL SAMAYOA

@@ -11,7 +11,7 @@ PROCEDURE [dbo].[usp_soriana_cfd_busca_acuse]
 EXECUTE usp_soriana_cfd_busca_acuse 'FK','00057797'
 */
 
-WITH ENCRYPTION
+
 AS
 
 SELECT numTienda, serie_cfd, folio_fiscal, folio_acuse, documento_soriana, usr 

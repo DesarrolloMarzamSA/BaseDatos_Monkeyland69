@@ -3,7 +3,7 @@ SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 CREATE procedure [dbo].[usp_genera_catalogo_farmacon]
 	@sucursal tinyint
-WITH ENCRYPTION
+
 as
 --declare @sucursal tinyint
 --set @sucursal = 17 

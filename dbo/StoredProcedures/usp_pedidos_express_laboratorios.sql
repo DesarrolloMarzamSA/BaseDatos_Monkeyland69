@@ -3,7 +3,7 @@ SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 
 CREATE procedure [dbo].[usp_pedidos_express_laboratorios]
-WITH ENCRYPTION
+
 as
 
 declare @num_cuenta varchar(4)

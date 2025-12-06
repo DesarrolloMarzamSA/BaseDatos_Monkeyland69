@@ -11,7 +11,7 @@ CREATE PROCEDURE [dbo].[usp_facturacion_pharmacySoft]
 	@ctepadre VARCHAR(50)='',
 	@cte VARCHAR(150)='',
 	@fecha DATETIME
-WITH ENCRYPTION
+
 AS
 BEGIN
 	SET NOCOUNT ON;

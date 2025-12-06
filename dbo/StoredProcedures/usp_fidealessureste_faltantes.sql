@@ -8,7 +8,7 @@ PROCEDURE [dbo].[usp_fidealessureste_faltantes]
 
 --DECLARE
 	@fecha VARCHAR(10)	
-WITH ENCRYPTION
+
 AS
 
 --	SET @fecha = '2011-04-13'

@@ -8,7 +8,7 @@ CREATE procedure [dbo].[usp_genera_respuesta_factura_pedidos_klyns]
 	@orden varchar(50),
 	@consecutivo varchar(50),
 	@factura varchar(50)
-WITH ENCRYPTION
+
 as
 
 declare @renglones int

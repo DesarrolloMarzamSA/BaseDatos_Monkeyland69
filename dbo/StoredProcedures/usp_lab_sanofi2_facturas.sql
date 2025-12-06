@@ -10,7 +10,7 @@ EXECUTE usp_lab_sanofi2_facturas	'2012-05-29'
 SELECT * FROM lab_sanofi2_factura
 SELECT * FROM lab_sanofi2_control_facturas
 */
-WITH ENCRYPTION
+
 AS
 --	FACTURAS
 --	19	MAR	2012

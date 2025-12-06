@@ -15,7 +15,7 @@ usp_lab_sanofi_order_creation  7, '2011-02-11'
 */
 
 
-WITH ENCRYPTION
+
 AS
 
 --	DECLARE @fecha VARCHAR(10)

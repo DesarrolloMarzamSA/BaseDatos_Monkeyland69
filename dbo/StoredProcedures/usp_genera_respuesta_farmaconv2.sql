@@ -3,7 +3,7 @@ SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 CREATE PROCEDURE [dbo].[usp_genera_respuesta_farmaconv2]
 	@hash_md5 varchar(50)
-WITH ENCRYPTION
+
 as
 
 --declare @hash_md5 varchar(50)

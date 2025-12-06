@@ -20,7 +20,7 @@ PROCEDURE [dbo].[usp_fbenavides_pedidos_ci_insert_historia]
 SELECT * FROM pedidos_fbenavides_ci WITH (NOLOCK) ORDER BY linea
 */
 
-WITH ENCRYPTION
+
 AS
 SET NOCOUNT on;
 

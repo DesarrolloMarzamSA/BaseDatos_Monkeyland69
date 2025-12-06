@@ -4,7 +4,7 @@ GO
 
 CREATE 		--	CREATE
 PROCEDURE [dbo].[usp_tareas_windows_25_pordia]
-WITH ENCRYPTION
+
 AS
 
 

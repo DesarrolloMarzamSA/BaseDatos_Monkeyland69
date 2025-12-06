@@ -2,7 +2,7 @@
 SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 CREATE PROCEDURE [dbo].[usp_importa_facturaciones_electronicas_demanda]
-WITH ENCRYPTION
+
 as
 declare @sucursal as tinyint, @letra as varchar(1), @ip as varchar(20), @usuario as varchar(50), @password as varchar(50), @fact_elec as varchar(50)
 declare @archivo as varchar(20), @archivo_local as varchar(50), @ruta_local as varchar(50), @comando_delete as varchar(50), @comando_mkdir as varchar(50)

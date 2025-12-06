@@ -3,7 +3,7 @@ SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 CREATE --create 
 procedure [dbo].[usp_busca_ean] @codigo varchar(7)
-WITH ENCRYPTION
+
 as
 
 /*

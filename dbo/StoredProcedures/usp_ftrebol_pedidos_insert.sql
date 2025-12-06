@@ -27,7 +27,7 @@ SELECT * FROM pedidos_ftrebol WITH (NOLOCK) ORDER BY linea
 */
 
 
-WITH ENCRYPTION
+
 AS
 
 INSERT INTO pedidos_ftrebol	(

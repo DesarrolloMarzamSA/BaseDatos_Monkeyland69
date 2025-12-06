@@ -15,7 +15,7 @@ CREATE procedure [dbo].[usp_inserta_pedidos_leyva]
 	@importe_descuento_oferta_unitario varchar(10),
 	@importe_descuento_financiero_unitario varchar(10),
 	@tasa_iva varchar(10)
-WITH ENCRYPTION
+
 as	
 
 	--declare @x_Sucursal tinyint

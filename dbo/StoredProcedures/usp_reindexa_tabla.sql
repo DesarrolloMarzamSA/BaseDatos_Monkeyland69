@@ -3,7 +3,7 @@ SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 
 CREATE procedure [dbo].[usp_reindexa_tabla] @tabla varchar(100)
-WITH ENCRYPTION
+
 as
 DECLARE @TableName sysname
 DECLARE @indid int

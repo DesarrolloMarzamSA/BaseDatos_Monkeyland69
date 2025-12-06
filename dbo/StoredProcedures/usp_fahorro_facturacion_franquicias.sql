@@ -2,7 +2,7 @@
 SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 CREATE PROCEDURE [dbo].[usp_fahorro_facturacion_franquicias]
-WITH ENCRYPTION
+
 AS
 BEGIN
 	-- SET NOCOUNT ON added to prevent extra result sets from

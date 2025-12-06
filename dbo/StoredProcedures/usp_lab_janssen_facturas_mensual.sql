@@ -4,7 +4,7 @@ GO
 CREATE	--	CREATE	--	DROP
 PROCEDURE [dbo].[usp_lab_janssen_facturas_mensual] 
 @fecha VARCHAR(10)
-WITH ENCRYPTION
+
 AS
 
 /*

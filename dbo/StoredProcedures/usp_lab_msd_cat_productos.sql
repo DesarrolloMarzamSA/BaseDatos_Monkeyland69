@@ -5,7 +5,7 @@ GO
 CREATE --	CREATE	--	DROP
 PROCEDURE [dbo].[usp_lab_msd_cat_productos]
 	@fecha VARCHAR(10)
-WITH ENCRYPTION
+
 AS
 
 /*

@@ -8,7 +8,7 @@ PROCEDURE [dbo].[usp_fmorelost_fe]
 --@sucursal INT,
 @fecha VARCHAR(10)
 
-WITH ENCRYPTION
+
 AS
 
 /*

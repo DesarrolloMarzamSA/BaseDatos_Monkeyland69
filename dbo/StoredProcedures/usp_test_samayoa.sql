@@ -3,7 +3,7 @@ SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 CREATE	--	create
 procedure [dbo].[usp_test_samayoa]
-WITH ENCRYPTION
+
 as
 
 

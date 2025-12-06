@@ -4,7 +4,7 @@ GO
 
 CREATE	--	CREATE
 PROCEDURE [dbo].[usp_fidealessureste_pedidos_codigos]
-WITH ENCRYPTION
+
 AS
 
 /*

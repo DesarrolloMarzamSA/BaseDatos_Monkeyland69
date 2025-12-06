@@ -3,7 +3,7 @@ SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 CREATE procedure [dbo].[usp_genera_facturacion_electronica_moderna_gdl] @sucursal int, @segto varchar(2), @ctepadre varchar(3)
 --exec usp_genera_facturacion_electronica_anefar 17, 'C2', '214'
-WITH ENCRYPTION
+
 as
 --PROCEDIMIENTO PARA FACTURACIÓN ELECTRÓNICA FCIAS. MODERNA DE GDL
 select

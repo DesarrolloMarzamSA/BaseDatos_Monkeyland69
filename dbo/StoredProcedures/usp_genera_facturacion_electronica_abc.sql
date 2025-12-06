@@ -3,7 +3,7 @@ SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 
 CREATE PROCEDURE [dbo].[usp_genera_facturacion_electronica_abc] @sucursal int, @segto varchar(2), @ctepadre varchar(3), @horario varchar(25)
-WITH ENCRYPTION
+
 as
 --PROCEDIMIENTO PARA FACTURACIÓN ELECTRÓNICA FCIAS. MODERNA DE GDL
 declare @fecha_facturacion datetime

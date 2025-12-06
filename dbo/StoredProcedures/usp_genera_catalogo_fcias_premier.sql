@@ -4,7 +4,7 @@ GO
 
 CREATE PROCEDURE [dbo].[usp_genera_catalogo_fcias_premier]
 	@sucursal INT
-WITH ENCRYPTION
+
 AS
 DECLARE @descuento VARCHAR(6)
 

@@ -8,7 +8,7 @@ PROCEDURE [dbo].[usp_feltrebol_oferta]
 --DECLARE 
 --@bolsas VARCHAR(100)
 
-WITH ENCRYPTION
+
 AS
 
 /*

@@ -7,7 +7,7 @@ GO
 
 --usp_genera_catalogo_medex 5, '00642'
 CREATE  procedure [dbo].[usp_genera_catalogo_medex] @sucursal int, @cliente varchar(5)
-WITH ENCRYPTION
+
 as
 declare @descuento money
 select @descuento = convert(money, descuento) from clientes_baan where sucursal = @sucursal and cliente = @cliente

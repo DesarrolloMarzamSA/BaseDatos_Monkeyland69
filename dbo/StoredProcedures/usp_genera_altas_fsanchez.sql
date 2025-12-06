@@ -4,7 +4,7 @@ GO
 
 
 CREATE procedure [dbo].[usp_genera_altas_fsanchez] ( @dias int)
-WITH ENCRYPTION
+
 as
 
 --	usp_genera_altas_fsanchez 10

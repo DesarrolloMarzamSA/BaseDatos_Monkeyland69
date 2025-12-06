@@ -8,7 +8,7 @@ PROCEDURE [dbo].[usp_fardemex_pedidos_lineas]
 @cliente	VARCHAR(5),
 @pedido		VARCHAR(10)
 
-WITH ENCRYPTION
+
 AS
 
 SELECT sucursal, letra, cliente, arch_cliente, pedido, codigo, SUM(cantidad_pedida) cantidad 

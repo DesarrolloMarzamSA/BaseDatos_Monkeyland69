@@ -2,7 +2,7 @@
 SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 
-CREATE PROCEDURE [dbo].[usp_genera_catalogo_maestro_fidealessureste_abc_fal_ofe] (@sucursal int)	WITH ENCRYPTION
+CREATE PROCEDURE [dbo].[usp_genera_catalogo_maestro_fidealessureste_abc_fal_ofe] (@sucursal int)	
 as
 
 

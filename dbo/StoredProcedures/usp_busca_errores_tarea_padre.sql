@@ -3,7 +3,7 @@ SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 CREATE PROCEDURE [dbo].[usp_busca_errores_tarea_padre]
 @partime varchar(4)
-WITH ENCRYPTION
+
 as
 declare @dw tinyint
 declare @mm tinyint

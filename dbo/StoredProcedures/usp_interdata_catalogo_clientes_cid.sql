@@ -4,7 +4,7 @@ GO
 CREATE procedure [dbo].[usp_interdata_catalogo_clientes_cid]
 	@x_FechaInicial datetime,
 	@x_FechaFinal datetime
-WITH ENCRYPTION
+
 as
 --select	distinct 
 --			right('000' + convert(varchar(3), case convert(varchar(3), t2.suc_interdata) when 2 then '  A' else convert(varchar(3), t2.suc_interdata) end), 3) + 

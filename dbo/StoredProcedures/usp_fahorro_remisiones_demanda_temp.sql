@@ -12,7 +12,7 @@ GO
 --exec [usp_fahorro_remisiones_demanda] 2,'09/11/2012',4,''
 
 CREATE procedure [dbo].[usp_fahorro_remisiones_demanda_temp] @tipo int,@fecha varchar(10), @porSucursal  varchar(10),@facRemisiones varchar(2000)
-WITH ENCRYPTION
+
 as
 set nocount on
 declare @sucursal int 

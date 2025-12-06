@@ -4,7 +4,7 @@ GO
 
 CREATE	--	CREATE
 PROCEDURE [dbo].[usp_pdurango_fe] @fecha VARCHAR(10),	@bloque VARCHAR(2)
-WITH ENCRYPTION
+
 AS
 
 /*

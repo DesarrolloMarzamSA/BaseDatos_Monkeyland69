@@ -8,7 +8,7 @@ GO
 -- Description:	<Description,,>
 -- =============================================
 CREATE PROCEDURE [dbo].[usp_lab_sanofi2_pedidos] @fecha VARCHAR(10)
-WITH ENCRYPTION
+
 AS
 BEGIN
 	-- SET NOCOUNT ON added to prevent extra result sets from

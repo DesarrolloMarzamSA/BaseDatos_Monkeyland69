@@ -8,7 +8,7 @@ GO
 
 --exec usp_genera_catalogo_moderna 17
 CREATE procedure [dbo].[usp_genera_catalogo_moderna] @sucursal int
-WITH ENCRYPTION
+
 as
 
 select 

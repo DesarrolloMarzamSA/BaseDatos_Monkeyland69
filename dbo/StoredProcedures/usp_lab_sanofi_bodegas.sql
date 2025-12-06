@@ -6,7 +6,7 @@ CREATE
 --	CREATE
 PROCEDURE [dbo].[usp_lab_sanofi_bodegas] 
 @almacen INT, @fecha VARCHAR(10)
-WITH ENCRYPTION
+
 AS
 /*
 usp_lab_sanofi_bodegas 18,'2011-02-11'

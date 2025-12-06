@@ -3,7 +3,7 @@ SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 CREATE PROCEDURE [dbo].[usp_ramarespuestas] 
 	@archivo VARCHAR(10)
-WITH ENCRYPTION
+
 AS
 SELECT 	'"' + RTRIM(codigo) + '","' + 
 	RTRIM(codigopresentacion) + '","' + 

@@ -4,7 +4,7 @@ GO
 
 CREATE procedure [dbo].[usp_fanasa_pedidos_embarque]
 @orno varchar(20),@cliente varchar(20),@compania varchar(20)
-WITH ENCRYPTION
+
 as
 declare @cadena_sql as varchar(1000),
 @fac varchar(20)

@@ -4,7 +4,7 @@ GO
 CREATE procedure [dbo].[usp_calimax_archivos_xml]  
 	@sucursal tinyint,  
 	@fecha datetime  
-WITH ENCRYPTION
+
 as  
 --declare @sucursal tinyint  
 --declare @fecha datetime  

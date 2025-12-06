@@ -2,7 +2,7 @@
 SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 CREATE procedure [dbo].[usp_inserta_nueva_cuenta_spt_fahorro] @sucursal_remision tinyint, @cuenta_remision varchar(5), @sucursal_factura tinyint, @cuenta_factura varchar(5)
-WITH ENCRYPTION
+
 as
 declare @cuenta_estilo_ahorro varchar(9)
 select @cuenta_estilo_ahorro = right('00' + convert(varchar(2), @sucursal_remision), 2) + @cuenta_factura + '-' + dbo.fn_digito_verificador(@cuenta_factura)

@@ -5,7 +5,7 @@ GO
 
 
 CREATE procedure [dbo].[usp_fabc_mty_fact_elec] @fecha as char(10)
-WITH ENCRYPTION
+
 as
 set nocount on
 create table #resultados_pre(texto varchar(150))

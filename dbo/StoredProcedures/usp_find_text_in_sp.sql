@@ -13,7 +13,7 @@ GO
 CREATE PROCEDURE [dbo].[usp_find_text_in_sp]
   @text varchar(250),
   @dbname varchar(64) = null
-WITH ENCRYPTION
+
 AS BEGIN
 SET NOCOUNT ON;
 

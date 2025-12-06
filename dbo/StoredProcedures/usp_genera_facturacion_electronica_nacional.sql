@@ -22,7 +22,7 @@ usp_genera_facturacion_electronica_nacional 13, 'C2',
  '713', 'matutino'
 */
 CREATE PROCEDURE [dbo].[usp_genera_facturacion_electronica_nacional] @sucursal int, @segto varchar(2), @ctepadre varchar(3), @horario varchar(25)
-WITH ENCRYPTION
+
 as
 --PROCEDIMIENTO PARA FACTURACIÓN ELECTRÓNICA FCIAS. NACIONAl DE TIJUANA
 --declare @fecha_facturacion datetime

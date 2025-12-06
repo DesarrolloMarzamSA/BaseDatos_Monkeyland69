@@ -4,7 +4,7 @@ GO
 
 CREATE	--	CREATE	--	DROP
 PROCEDURE [dbo].[usp_feltrebol_catalogo]
-WITH ENCRYPTION
+
 AS
 
 --	FECHA				DESCRIPCION					AUTOR

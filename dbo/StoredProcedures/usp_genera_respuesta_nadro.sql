@@ -3,7 +3,7 @@ SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 CREATE PROCEDURE [dbo].[usp_genera_respuesta_nadro]
 @x_Hashes as varchar(100)
-WITH ENCRYPTION
+
 as
 --declare @x_Hashes as varchar(100)
 --set @x_Hashes = 'e4906da0f21e8167431f5744f51d0795'

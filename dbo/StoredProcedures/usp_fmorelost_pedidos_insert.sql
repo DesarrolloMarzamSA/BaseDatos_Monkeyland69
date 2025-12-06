@@ -27,7 +27,7 @@ PROCEDURE [dbo].[usp_fmorelost_pedidos_insert]
 SELECT * FROM pedidos_fmorelost WITH (NOLOCK) ORDER BY linea
 */
 
-WITH ENCRYPTION
+
 AS
 
 /*

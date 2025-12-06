@@ -4,7 +4,7 @@ GO
 CREATE 
 --  CREATE 
 PROCEDURE [dbo].[usp_genera_facturacion_electronica_fhidalgo_culiacan] @fecha	varchar(10)
-WITH ENCRYPTION
+
 as
 
 --PROCEDIMIENTO PARA FACTURACIÓN ELECTRÓNICA FCIAS. HIDALGO CULIACAN

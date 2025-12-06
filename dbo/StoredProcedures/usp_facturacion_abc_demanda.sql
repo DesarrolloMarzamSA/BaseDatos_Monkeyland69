@@ -2,7 +2,7 @@
 SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 CREATE procedure [dbo].[usp_facturacion_abc_demanda] @sucursal as tinyint, @fecha varchar(10)
-WITH ENCRYPTION
+
 as
 select 
 right('          '    + convert(varchar(10), convert(bigint, t1.cliente)), 10) +

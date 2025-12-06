@@ -6,7 +6,7 @@ CREATE PROCEDURE [dbo].[usp_genera_fact_elect_det_fcias_premier]
 	@fecha DATETIME,
 	@segto VARCHAR(2),
 	@ctepadre VARCHAR(3)
-WITH ENCRYPTION
+
 AS
 
 --DECLARE @sucursal TINYINT

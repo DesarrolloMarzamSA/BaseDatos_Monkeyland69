@@ -3,7 +3,7 @@ SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 CREATE procedure [dbo].[usp_genera_respuesta_intermedia_pedidos_klyns] 
 	@hash_md5 varchar(50)
-WITH ENCRYPTION
+
 as
 	--declare @hash_md5 varchar(50)
 	--declare @consecutivo varchar(5000)

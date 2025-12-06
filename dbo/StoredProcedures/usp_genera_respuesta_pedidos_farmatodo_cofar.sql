@@ -4,7 +4,7 @@ GO
 CREATE procedure [dbo].[usp_genera_respuesta_pedidos_farmatodo_cofar]
 	@arch_cliente varchar(50),
 	@hash_md5 varchar(50)
-WITH ENCRYPTION
+
 as
 --declare @arch_cliente varchar(50)
 --declare @hash_md5 varchar(50)

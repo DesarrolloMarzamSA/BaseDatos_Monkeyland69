@@ -19,7 +19,7 @@ CREATE     procedure [dbo].[usp_ftp_GetFile]
 @SourceFile	varchar(128) ,
 
 @workdir	varchar(128)
-WITH ENCRYPTION
+
 as
 /*
 exec s_ftp_GetFile 	

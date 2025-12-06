@@ -12,7 +12,7 @@ CREATE PROCEDURE [dbo].[usp_genera_catalogo_minne]
 --Creacion: 			23/03/ 2009
 --Modificacion:		25/03/2010
 --Modificacion:		07/08/2012
-WITH ENCRYPTION
+
 AS
 
 declare @factor int

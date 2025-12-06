@@ -4,7 +4,7 @@ GO
 CREATE	--	CREATE
 PROCEDURE [dbo].[usp_fminne_pedidos_codigos]
 
-WITH ENCRYPTION
+
 AS
 
 UPDATE pedidos_minne  SET 

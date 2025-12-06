@@ -5,7 +5,7 @@ GO
 CREATE	--	CREATE	--	DROP
 PROCEDURE [dbo].[usp_lab_sanofi_farmalink_order_confirmation_line] 
 @pedido VARCHAR(20)
-WITH ENCRYPTION
+
 AS
 
 /*

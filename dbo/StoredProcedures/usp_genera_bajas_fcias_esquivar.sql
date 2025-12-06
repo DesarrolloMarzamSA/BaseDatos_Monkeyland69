@@ -3,7 +3,7 @@ SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 
 CREATE PROCEDURE [dbo].[usp_genera_bajas_fcias_esquivar]
-WITH ENCRYPTION
+
 AS
 SELECT	LEFT(CONVERT(VARCHAR(13), CONVERT(BIGINT, t1.cod_barras)) + REPLICATE(' ', 13), 13) + 
 		LEFT(t1.descripcion + REPLICATE(' ', 30), 30) + 

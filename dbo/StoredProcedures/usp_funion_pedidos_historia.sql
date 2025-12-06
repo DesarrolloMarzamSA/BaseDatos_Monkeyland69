@@ -7,7 +7,7 @@ CREATE	--CREATE
 PROCEDURE [dbo].[usp_funion_pedidos_historia]	
 --DECLARE
 	@fecha VARCHAR(10)
-WITH ENCRYPTION
+
 AS
 
 --	2011-04-13		CREACION				MIGUEL SAMAYOA

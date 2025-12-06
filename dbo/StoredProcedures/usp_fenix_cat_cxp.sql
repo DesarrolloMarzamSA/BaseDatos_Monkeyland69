@@ -6,7 +6,7 @@ GO
 
 CREATE--	CREATE
 PROCEDURE [dbo].[usp_fenix_cat_cxp]
-WITH ENCRYPTION
+
 AS
 
 SELECT 

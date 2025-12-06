@@ -6,7 +6,7 @@ CREATE --CREATE
 PROCEDURE [dbo].[usp_soriana_cfd_bitacora]
 --@sucursal INT, 
 @fecha VARCHAR(10), @confirmadas INT 
-WITH ENCRYPTION
+
 AS
 /*
 usp_soriana_cfd_bitacora '2010-12-09', 0--	1, 

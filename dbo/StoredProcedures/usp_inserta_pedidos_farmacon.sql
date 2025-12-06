@@ -16,7 +16,7 @@ CREATE procedure [dbo].[usp_inserta_pedidos_farmacon]
 	@piva money, 
 	@preciobasef money, 
 	@indicadorfg char(2)
-WITH ENCRYPTION
+
 as
 declare @x_sucursal tinyint
 --declare  @x_sucursal as tinyint

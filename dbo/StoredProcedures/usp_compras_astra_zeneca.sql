@@ -4,7 +4,7 @@ GO
 
 
 CREATE PROCEDURE [dbo].[usp_compras_astra_zeneca]
-WITH ENCRYPTION
+
 as
 /*
 declare @miquery as varchar(8000)

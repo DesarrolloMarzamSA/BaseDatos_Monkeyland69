@@ -21,7 +21,7 @@ PROCEDURE [dbo].[usp_fbenavides_pedidos_insert]
 SELECT * FROM pedidos_fbenavides WITH (NOLOCK) ORDER BY linea
 */
 
-WITH ENCRYPTION
+
 AS
 
 /*

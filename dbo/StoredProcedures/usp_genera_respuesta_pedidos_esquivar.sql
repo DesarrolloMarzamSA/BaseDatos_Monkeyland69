@@ -4,7 +4,7 @@ GO
 CREATE PROCEDURE [dbo].[usp_genera_respuesta_pedidos_esquivar]
 	@arch_cliente VARCHAR(50),
 	@hash_md5 VARCHAR(50)
-WITH ENCRYPTION
+
 AS
 
 --DECLARE @arch_cliente VARCHAR(50)

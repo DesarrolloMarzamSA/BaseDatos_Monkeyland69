@@ -5,7 +5,7 @@ CREATE procedure [dbo].[usp_genera_fact_elect_det_fcias_leyva_20]-- 1,'FLE940304
 	@sucursal TINYINT, 
 	@rfc VARCHAR(50),
 	@fecha DATETIME
-WITH ENCRYPTION
+
 AS
 --DECLARE @sucursal TINYINT
 --DECLARE @rfc VARCHAR(50)

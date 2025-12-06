@@ -14,7 +14,7 @@ PROCEDURE [dbo].[usp_fbenavides_insert_cuenta]
 @controlados	BIT							,
 @activo				BIT							
 
-WITH ENCRYPTION
+
 AS
 
 declare 

@@ -11,7 +11,7 @@ CREATE PROCEDURE [dbo].[usp_genera_catalogo_fcuauhtemoc]
 --HECHO POR: 			MIGUEL SAMAYOA.
 --Creacion: 			07/09/2009
 --Modificacion:		25/03/2010
-WITH ENCRYPTION
+
 AS
 
 declare @factor int

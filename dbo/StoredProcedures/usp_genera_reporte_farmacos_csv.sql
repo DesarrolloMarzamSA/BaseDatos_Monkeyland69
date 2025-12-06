@@ -2,7 +2,7 @@
 SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 CREATE procedure [dbo].[usp_genera_reporte_farmacos_csv]
-WITH ENCRYPTION
+
 as
 
 set nocount on

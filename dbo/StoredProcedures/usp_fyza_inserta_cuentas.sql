@@ -12,7 +12,7 @@ PROCEDURE [dbo].[usp_fyza_inserta_cuentas]
 @sucursal						INT,
 @cliente						VARCHAR(5)
 
-WITH ENCRYPTION
+
 AS
 
 

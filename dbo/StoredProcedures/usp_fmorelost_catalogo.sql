@@ -4,7 +4,7 @@ GO
 
 CREATE	--	CREATE	--	DROP
 PROCEDURE [dbo].[usp_fmorelost_catalogo]
-WITH ENCRYPTION
+
 AS
 
 --	FECHA				DESCRIPCION					AUTOR

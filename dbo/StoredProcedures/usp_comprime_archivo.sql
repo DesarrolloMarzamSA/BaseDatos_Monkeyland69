@@ -3,7 +3,7 @@ SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 
 CREATE procedure [dbo].[usp_comprime_archivo] @archivo as varchar(500), @archivo_zip as varchar(500)
-WITH ENCRYPTION
+
 as
 
 declare @cmd varchar(500)

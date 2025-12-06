@@ -4,7 +4,7 @@ GO
 --	usp_genera_catalogo_nacional 25
 
 CREATE  procedure [dbo].[usp_genera_catalogo_nacional] @sucursal int
-WITH ENCRYPTION
+
 as
 select
 left(convert(varchar(13), convert(bigint, t1.cod_barras)) + '             ', 13) + '|' +

@@ -8,7 +8,7 @@ CREATE PROCEDURE [dbo].[usp_genera_facturacion_electronica_fcias_farmapronto_reg
 	@ctepadre VARCHAR(3),
 	@cliente VARCHAR(5),
 	@folio_fiscal VARCHAR(8)
-WITH ENCRYPTION
+
 AS
 
 --DECLARE @folio_fiscal VARCHAR(8)

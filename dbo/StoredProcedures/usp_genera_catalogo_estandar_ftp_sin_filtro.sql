@@ -4,7 +4,7 @@ GO
 
 
 CREATE PROCEDURE [dbo].[usp_genera_catalogo_estandar_ftp_sin_filtro] @sucursal int, @minexist int
-WITH ENCRYPTION
+
 as
 --PROCEDIMIENTO PARA  CATALOGO ESTÁNDAR CLIENTES SERVIDOR FTP
 select 

@@ -5,7 +5,7 @@ GO
 
 
 CREATE procedure [dbo].[usp_cxcice_clientes]
-WITH ENCRYPTION
+
 as
 SELECT columnota FROM OPENQUERY(AS400,
 'SELECT 

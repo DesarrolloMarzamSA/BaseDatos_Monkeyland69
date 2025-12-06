@@ -9,7 +9,7 @@ CREATE procedure [dbo].[usp_ftp_getdir]
 @FTPPWD		varchar(128) ,
 @FTPPath	varchar(128) ,
 @workdir	varchar(128)
-WITH ENCRYPTION
+
 as
 /*
 exec s_ftp 'myftpsite', 'username', 'password', '/dir1/', 'c:\temp\'

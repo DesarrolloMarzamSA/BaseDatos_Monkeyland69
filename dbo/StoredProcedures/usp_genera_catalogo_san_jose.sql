@@ -3,7 +3,7 @@ SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 
 CREATE PROCEDURE [dbo].[usp_genera_catalogo_san_jose]
-WITH ENCRYPTION
+
 as
 declare @descuento varchar(6)
 select @descuento = right('   ' + convert(varchar(6), descuento), 6) from clientes_baan where sucursal = 7 and cliente = '07123'

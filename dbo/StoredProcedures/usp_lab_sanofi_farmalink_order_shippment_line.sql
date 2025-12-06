@@ -6,7 +6,7 @@ CREATE	--	CREATE	--	DROP
 PROCEDURE [dbo].[usp_lab_sanofi_farmalink_order_shippment_line] 
 --DECLARE 
 @pedido VARCHAR(20)
-WITH ENCRYPTION
+
 AS
 --SET @pedido = '15153548494'
 

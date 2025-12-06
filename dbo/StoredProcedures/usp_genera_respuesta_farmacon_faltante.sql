@@ -4,7 +4,7 @@ GO
 
 CREATE PROCEDURE [dbo].[usp_genera_respuesta_farmacon_faltante] --'0b615773a201e976b8c512fb38f9f0d3'
 	@hash_md5 varchar(50)
-WITH ENCRYPTION
+
 as
 
 --declare @hash_md5 varchar(50)

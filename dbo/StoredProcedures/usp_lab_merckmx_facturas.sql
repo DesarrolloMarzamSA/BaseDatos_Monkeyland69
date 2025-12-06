@@ -10,7 +10,7 @@ EXECUTE usp_lab_merckmx_facturas	'2011-07-31'
 SELECT * FROM lab_merckmx_factura
 SELECT * FROM lab_merckmx_control_facturas
 */
-WITH ENCRYPTION
+
 AS
 --	FACTURAS
 --	12	JUN	2009

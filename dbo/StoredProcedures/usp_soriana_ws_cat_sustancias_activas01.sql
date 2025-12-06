@@ -2,7 +2,7 @@
 SET ANSI_NULLS, QUOTED_IDENTIFIER ON
 GO
 CREATE procedure [dbo].[usp_soriana_ws_cat_sustancias_activas01]
-WITH ENCRYPTION
+
 as
 select	top 2570 1 orden, 
 			convert(bigint, Ltrim(Rtrim(cod_barras))) Codigo,
