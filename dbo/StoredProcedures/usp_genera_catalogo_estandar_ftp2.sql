@@ -1,12 +1,6 @@
-﻿
-SET ANSI_NULLS, QUOTED_IDENTIFIER ON
-GO
-
---select 'select top 1 descuento from clientes_baan where ' + replace(query, 'fecha_tandem >= convert(datetime, convert(varchar(10), current_timestamp, 121), 121) and ', '') from parametros_fact_elec_estandar where cliente = 'FBGUADALUPANA'
+﻿--select 'select top 1 descuento from clientes_baan where ' + replace(query, 'fecha_tandem >= convert(datetime, convert(varchar(10), current_timestamp, 121), 121) and ', '') from parametros_fact_elec_estandar where cliente = 'FBGUADALUPANA'
 --exec usp_genera_catalogo_estandar_ftp2 6, 10, 'FBGUADALUPANA'
 CREATE procedure [dbo].[usp_genera_catalogo_estandar_ftp2] @sucursal int, @minexist int, @cliente varchar(30)
- 
-
 as
 
 declare @iva as money

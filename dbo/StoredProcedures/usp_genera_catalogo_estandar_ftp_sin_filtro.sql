@@ -1,9 +1,4 @@
-﻿
-SET ANSI_NULLS, QUOTED_IDENTIFIER ON
-GO
-
-
-CREATE PROCEDURE [dbo].[usp_genera_catalogo_estandar_ftp_sin_filtro] @sucursal int, @minexist int
+﻿CREATE PROCEDURE [dbo].[usp_genera_catalogo_estandar_ftp_sin_filtro] @sucursal int, @minexist int
 
 as
 --PROCEDIMIENTO PARA  CATALOGO ESTÁNDAR CLIENTES SERVIDOR FTP

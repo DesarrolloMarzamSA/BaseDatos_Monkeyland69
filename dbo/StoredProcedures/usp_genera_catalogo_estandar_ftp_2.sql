@@ -3,7 +3,7 @@ CREATE PROCEDURE [dbo].[usp_genera_catalogo_estandar_ftp_2]
 
 AS
 BEGIN
---El cuerpo del script estaba cifrado y no se puede reproducir aquí.
+--EL procedimiento esta dañado dsde el servidor, no se peudo recuperar
     RETURN
 END
 
