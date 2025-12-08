@@ -1,4 +1,4 @@
-CREATE  PROCEDURE [dbo].[usp_genera_facturacion_electronica_fcias_farmapronto_detalle]
+﻿CREATE  PROCEDURE [dbo].[usp_genera_facturacion_electronica_fcias_farmapronto_detalle]
 	@sucursal INT,
 	@fecha DATETIME,
 	@segto VARCHAR(2),
@@ -86,6 +86,4 @@ WHERE 	--t1.fecha_factura = CONVERT(DATETIME, CONVERT(VARCHAR(10), @fecha, 121),
 		
 		
 ORDER BY t1.cod_barras
-
 GO
-
